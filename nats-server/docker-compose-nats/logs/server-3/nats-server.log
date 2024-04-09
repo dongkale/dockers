@@ -1,0 +1,1108 @@
+[1] 2024/04/09 18:10:15.897676 [INF] Starting nats-server
+[1] 2024/04/09 18:10:15.898367 [INF]   Version:  2.10.12
+[1] 2024/04/09 18:10:15.898681 [INF]   Git:      [121169ea]
+[1] 2024/04/09 18:10:15.899112 [DBG]   Go build: go1.21.8
+[1] 2024/04/09 18:10:15.899584 [INF]   Cluster:  nat_cluster
+[1] 2024/04/09 18:10:15.899836 [INF]   Name:     myserver3
+[1] 2024/04/09 18:10:15.900213 [INF]   Node:     5rpweUtA
+[1] 2024/04/09 18:10:15.900460 [INF]   ID:       NB3B7BP7VF6J7FUVMPAQX63CLLM7VMFMHBIZ2E54R3PO6AF2VPQZQ5OI
+[1] 2024/04/09 18:10:15.900937 [INF] Using configuration file: /etc/nats/nats.conf
+[1] 2024/04/09 18:10:15.902012 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2024/04/09 18:10:15.902325 [INF] Starting JetStream
+[1] 2024/04/09 18:10:15.938151 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2024/04/09 18:10:15.938461 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2024/04/09 18:10:15.938897 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2024/04/09 18:10:15.939267 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2024/04/09 18:10:15.939736 [INF] 
+[1] 2024/04/09 18:10:15.940102 [INF]          https://docs.nats.io/jetstream
+[1] 2024/04/09 18:10:15.940382 [INF] 
+[1] 2024/04/09 18:10:15.940658 [INF] ---------------- JETSTREAM ----------------
+[1] 2024/04/09 18:10:15.941026 [INF]   Max Memory:      30.00 GB
+[1] 2024/04/09 18:10:15.941301 [INF]   Max Storage:     60.00 GB
+[1] 2024/04/09 18:10:15.941594 [INF]   Store Directory: "/var/lib/nats/jetstream/store/jetstream"
+[1] 2024/04/09 18:10:15.941872 [INF] -------------------------------------------
+[1] 2024/04/09 18:10:15.942423 [DBG]   Exports:
+[1] 2024/04/09 18:10:15.942864 [DBG]      $JS.API.>
+[1] 2024/04/09 18:10:15.943151 [DBG] Enabled JetStream for account "$G"
+[1] 2024/04/09 18:10:15.943629 [DBG]   Max Memory:      -1 B
+[1] 2024/04/09 18:10:15.943912 [DBG]   Max Storage:     -1 B
+[1] 2024/04/09 18:10:16.081471 [DBG] JetStream state for account "$G" recovered
+[1] 2024/04/09 18:10:16.081945 [INF] Starting JetStream cluster
+[1] 2024/04/09 18:10:16.082313 [DBG] JetStream cluster checking for stable cluster name and peers
+[1] 2024/04/09 18:10:16.082595 [INF] Creating JetStream metadata controller
+[1] 2024/04/09 18:10:16.406061 [INF] JetStream cluster recovering state
+[1] 2024/04/09 18:10:16.583086 [DBG] RAFT [5rpweUtA - _meta_] Started
+[1] 2024/04/09 18:10:16.583422 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2024/04/09 18:10:16.583732 [DBG] Get non local IPs for "0.0.0.0"
+[1] 2024/04/09 18:10:16.584077 [DBG] Starting metadata monitor
+[1] 2024/04/09 18:10:16.584131 [DBG]   ip=172.25.255.3
+[1] 2024/04/09 18:10:16.584905 [INF] Server is ready
+[1] 2024/04/09 18:10:16.585071 [INF] Cluster name is nat_cluster
+[1] 2024/04/09 18:10:16.585767 [DBG] maxprocs: Leaving GOMAXPROCS=56: CPU quota undefined
+[1] 2024/04/09 18:10:16.585768 [INF] Listening for route connections on 0.0.0.0:6222
+[1] 2024/04/09 18:10:16.588344 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:10:16.588436 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:10:16.588514 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:10:16.588626 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:10:16.588950 [DBG] 172.25.255.2:6222 - rid:7 - Route connect msg sent
+[1] 2024/04/09 18:10:16.591232 [INF] 172.25.255.2:6222 - rid:7 - Route connection created
+[1] 2024/04/09 18:10:16.589473 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:10:16.589989 [DBG] 172.25.255.2:6222 - rid:8 - Route connect msg sent
+[1] 2024/04/09 18:10:16.590540 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:10:16.597661 [INF] 172.25.255.2:6222 - rid:8 - Route connection created
+[1] 2024/04/09 18:10:16.599957 [DBG] 172.25.255.2:6222 - rid:7 - Sent local subscriptions to route
+[1] 2024/04/09 18:10:16.600473 [DBG] 172.25.255.2:6222 - rid:7 - Registering remote route "NABG2NEDHXACZRX7HFHZIFBJXOU2HSGMFMYRAOC3E55K6XTEJPETHM6T" for account "$SYS"
+[1] 2024/04/09 18:10:16.600700 [DBG] 172.25.255.2:6222 - rid:8 - Registering remote route "NABG2NEDHXACZRX7HFHZIFBJXOU2HSGMFMYRAOC3E55K6XTEJPETHM6T"
+[1] 2024/04/09 18:10:16.606441 [INF] 172.25.255.4:36618 - rid:9 - Route connection created
+[1] 2024/04/09 18:10:16.606821 [INF] 172.25.255.4:36622 - rid:10 - Route connection created
+[1] 2024/04/09 18:10:16.610081 [DBG] Trying to connect to route on 172.25.255.4:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:10:16.610872 [DBG] Trying to connect to route on 172.25.255.4:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:10:16.611040 [DBG] 172.25.255.4:6222 - rid:11 - Route connect msg sent
+[1] 2024/04/09 18:10:16.612146 [INF] 172.25.255.4:6222 - rid:11 - Route connection created
+[1] 2024/04/09 18:10:16.611795 [DBG] 172.25.255.4:6222 - rid:12 - Route connect msg sent
+[1] 2024/04/09 18:10:16.613141 [INF] 172.25.255.4:6222 - rid:12 - Route connection created
+[1] 2024/04/09 18:10:16.612561 [DBG] 172.25.255.4:36618 - rid:9 - Sent local subscriptions to route
+[1] 2024/04/09 18:10:16.613865 [DBG] 172.25.255.4:36618 - rid:9 - Registering remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER" for account "$SYS"
+[1] 2024/04/09 18:10:16.614139 [DBG] 172.25.255.4:36622 - rid:10 - Registering remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:16.614169 [DBG] 172.25.255.4:6222 - rid:11 - Detected duplicate remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:16.614984 [INF] 172.25.255.4:6222 - rid:11 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:10:16.614239 [DBG] 172.25.255.4:6222 - rid:12 - Registering remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:16.676331 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:10:16.677013 [DBG] 172.25.255.2:6222 - rid:13 - Route connect msg sent
+[1] 2024/04/09 18:10:16.677445 [INF] 172.25.255.2:6222 - rid:13 - Route connection created
+[1] 2024/04/09 18:10:16.677666 [DBG] 172.25.255.2:6222 - rid:13 - Registering remote route "NABG2NEDHXACZRX7HFHZIFBJXOU2HSGMFMYRAOC3E55K6XTEJPETHM6T"
+[1] 2024/04/09 18:10:16.678508 [DBG] Trying to connect to route on 172.25.255.4:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:10:16.681132 [INF] 172.25.255.4:36634 - rid:14 - Route connection created
+[1] 2024/04/09 18:10:16.681730 [DBG] 172.25.255.4:6222 - rid:15 - Route connect msg sent
+[1] 2024/04/09 18:10:16.682354 [INF] 172.25.255.4:6222 - rid:15 - Route connection created
+[1] 2024/04/09 18:10:16.681963 [DBG] 172.25.255.4:36634 - rid:14 - Registering remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:16.682568 [DBG] 172.25.255.4:6222 - rid:15 - Route pool size reached, closing extra connection to "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:16.683278 [DBG] 172.25.255.4:6222 - rid:15 - Detected duplicate remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:16.683642 [INF] 172.25.255.4:6222 - rid:15 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:10:16.685101 [WRN] Waiting for routing to be established...
+[1] 2024/04/09 18:10:16.685504 [DBG] Recovered JetStream cluster metadata
+[1] 2024/04/09 18:10:16.685755 [DBG] JetStream cluster checking for orphans
+[1] 2024/04/09 18:10:16.686137 [WRN] JetStream has not established contact with a meta leader
+[1] 2024/04/09 18:10:16.710995 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:10:16.711556 [DBG] 172.25.255.2:6222 - rid:16 - Route connect msg sent
+[1] 2024/04/09 18:10:16.711957 [INF] 172.25.255.2:6222 - rid:16 - Route connection created
+[1] 2024/04/09 18:10:16.712098 [DBG] 172.25.255.2:6222 - rid:16 - Registering remote route "NABG2NEDHXACZRX7HFHZIFBJXOU2HSGMFMYRAOC3E55K6XTEJPETHM6T"
+[1] 2024/04/09 18:10:17.116790 [INF] 172.25.255.2:35288 - rid:17 - Route connection created
+[1] 2024/04/09 18:10:17.116873 [INF] 172.25.255.2:35296 - rid:18 - Route connection created
+[1] 2024/04/09 18:10:17.119702 [DBG] 172.25.255.2:35288 - rid:17 - Detected duplicate remote route "NABG2NEDHXACZRX7HFHZIFBJXOU2HSGMFMYRAOC3E55K6XTEJPETHM6T"
+[1] 2024/04/09 18:10:17.119985 [INF] 172.25.255.2:35288 - rid:17 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:10:17.123516 [INF] 172.25.255.2:35296 - rid:18 - Router connection closed: Client Closed
+[1] 2024/04/09 18:10:17.584818 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:10:17.594438 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:10:17.594624 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:10:17.595451 [DBG] 172.25.255.4:6222 - rid:19 - Route connect msg sent
+[1] 2024/04/09 18:10:17.596312 [INF] 172.25.255.4:6222 - rid:19 - Route connection created
+[1] 2024/04/09 18:10:17.596772 [DBG] 172.25.255.4:6222 - rid:19 - Route pool size reached, closing extra connection to "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:17.597250 [DBG] 172.25.255.4:6222 - rid:19 - Detected duplicate remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:17.596087 [DBG] 172.25.255.4:6222 - rid:20 - Route connect msg sent
+[1] 2024/04/09 18:10:17.598213 [INF] 172.25.255.4:6222 - rid:20 - Route connection created
+[1] 2024/04/09 18:10:17.597651 [INF] 172.25.255.4:6222 - rid:19 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:10:17.598464 [DBG] 172.25.255.4:6222 - rid:20 - Detected duplicate remote route "NC2TGWUMGGSTJUVCR6EOKDAYCIAOWWCBP446B4Y6EQRO5H6FA5MRZVER"
+[1] 2024/04/09 18:10:17.599629 [INF] 172.25.255.4:6222 - rid:20 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:10:17.631990 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:10:17.722756 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:10:17.742126 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:10:17.751233 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:10:17.755217 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:10:17.775491 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:10:17.852809 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:10:17.880770 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:10:18.584810 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:10:19.585505 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:10:20.585533 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:10:20.779472 [DBG] RAFT [5rpweUtA - _meta_] Received a voteRequest &{term:9 lastTerm:8 lastIndex:21 candidate:sv1FOKru reply:$NRG.R.pb7IeTX7}
+[1] 2024/04/09 18:10:20.828249 [DBG] RAFT [5rpweUtA - _meta_] Sending a voteResponse &{term:9 peer:5rpweUtA granted:true} -> "$NRG.R.pb7IeTX7"
+[1] 2024/04/09 18:10:20.830066 [DBG] RAFT [5rpweUtA - _meta_] AppendEntry updating leader to "sv1FOKru"
+[1] 2024/04/09 18:10:20.830547 [DBG] RAFT [5rpweUtA - _meta_] AppendEntry did not match 8 21 with 8 20
+[1] 2024/04/09 18:10:20.831035 [INF] JetStream cluster new metadata leader: myserver2/nat_cluster
+[1] 2024/04/09 18:10:20.848603 [DBG] RAFT [5rpweUtA - _meta_] Canceling catchup subscription since we are now up to date
+[1] 2024/04/09 18:10:20.850381 [DBG] RAFT [5rpweUtA - _meta_] Update peers from leader to map[5rpweUtA:0xc0001562a0 HFT3WXRv:0xc0001562d0 sv1FOKru:0xc0001562b8]
+[1] 2024/04/09 18:10:20.871217 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:10:21.585474 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:10:47.632975 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:10:47.723626 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:10:47.742895 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:10:47.751214 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:10:47.755678 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:10:47.776129 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:10:47.854225 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:10:47.881647 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:11:17.634050 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:11:17.724471 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:11:17.743094 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:11:17.751791 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:11:17.756419 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:11:17.776595 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:11:17.854856 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:11:17.882195 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:11:47.634164 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:11:47.725366 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:11:47.744041 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:11:47.752566 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:11:47.757174 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:11:47.777559 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:11:47.855309 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:11:47.882733 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:12:17.635238 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:12:17.725532 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:12:17.744764 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:12:17.752907 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:12:17.757999 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:12:17.778038 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:12:17.855407 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:12:17.882563 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:12:47.635917 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:12:47.726176 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:12:47.745701 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:12:47.753236 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:12:47.758793 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:12:47.779264 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:12:47.856095 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:12:47.883598 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:13:17.636655 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:13:17.726350 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:13:17.745677 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:13:17.754250 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:13:17.759750 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:13:17.779929 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:13:17.856453 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:13:17.884352 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:13:47.636907 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:13:47.726916 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:13:47.746343 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:13:47.754977 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:13:47.759411 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:13:47.780606 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:13:47.856629 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:13:47.885061 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:14:17.637362 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:14:17.727057 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:14:17.747483 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:14:17.756127 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:14:17.760459 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:14:17.781398 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:14:17.857442 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:14:17.885937 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:14:47.638162 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:14:47.727399 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:14:47.747695 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:14:47.756323 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:14:47.760623 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:14:47.781826 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:14:47.857350 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:14:47.886133 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:15:17.639070 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:15:17.728845 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:15:17.748084 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:15:17.757669 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:15:17.762048 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:15:17.782739 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:15:17.857520 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:15:17.886531 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:15:47.639647 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:15:47.729510 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:15:47.749064 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:15:47.758264 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:15:47.762422 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:15:47.783573 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:15:47.858007 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:15:47.887318 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:16:17.640284 [DBG] 172.25.255.4:6222 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:16:17.730546 [DBG] 172.25.255.4:36622 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:16:17.749942 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:16:17.758523 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:16:17.762780 [DBG] 172.25.255.4:36618 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:16:17.784255 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:16:17.858969 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:16:17.887295 [DBG] 172.25.255.4:36634 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:16:38.188877 [DBG] Trapped "terminated" signal
+[1] 2024/04/09 18:16:38.189470 [DBG] Stepping down all leader raft nodes
+[1] 2024/04/09 18:16:38.190753 [INF] Initiating Shutdown...
+[1] 2024/04/09 18:16:38.191343 [INF] Initiating JetStream Shutdown...
+[1] 2024/04/09 18:16:38.191785 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[1] 2024/04/09 18:16:38.193907 [DBG] SYSTEM - System connection closed: Internal Client
+[1] 2024/04/09 18:16:38.194999 [DBG] RAFT [5rpweUtA - _meta_] Shutdown
+[1] 2024/04/09 18:16:38.193976 [INF] JetStream Shutdown
+[1] 2024/04/09 18:16:38.198203 [DBG] Exiting metadata monitor
+[1] 2024/04/09 18:16:38.200601 [DBG] Route accept loop exiting..
+[1] 2024/04/09 18:16:38.201930 [INF] 172.25.255.2:6222 - rid:7 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.203255 [INF] 172.25.255.2:6222 - rid:8 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.201972 [DBG] Client accept loop exiting..
+[1] 2024/04/09 18:16:38.202008 [DBG] SYSTEM - System connection closed: Client Closed
+[1] 2024/04/09 18:16:38.203819 [INF] 172.25.255.2:6222 - rid:13 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.206687 [INF] 172.25.255.2:6222 - rid:16 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.207462 [INF] 172.25.255.4:36622 - rid:10 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.208740 [INF] 172.25.255.4:6222 - rid:12 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.209353 [INF] 172.25.255.4:36634 - rid:14 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.210256 [INF] 172.25.255.4:36618 - rid:9 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:16:38.211133 [INF] Server Exiting..
+[1] 2024/04/09 18:17:32.049376 [INF] Starting nats-server
+[1] 2024/04/09 18:17:32.049931 [INF]   Version:  2.10.12
+[1] 2024/04/09 18:17:32.050703 [INF]   Git:      [121169ea]
+[1] 2024/04/09 18:17:32.050984 [DBG]   Go build: go1.21.8
+[1] 2024/04/09 18:17:32.051291 [INF]   Cluster:  nat_cluster
+[1] 2024/04/09 18:17:32.051547 [INF]   Name:     myserver3
+[1] 2024/04/09 18:17:32.052247 [INF]   Node:     5rpweUtA
+[1] 2024/04/09 18:17:32.052600 [INF]   ID:       NBKQ7Y2MMJ3KRKWHUBGMDQUH5V3XLH7OYPVL52Z5SUU2NDJ7CKSUIHUH
+[1] 2024/04/09 18:17:32.053215 [INF] Using configuration file: /etc/nats/nats.conf
+[1] 2024/04/09 18:17:32.054482 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2024/04/09 18:17:32.054972 [INF] Starting JetStream
+[1] 2024/04/09 18:17:32.056198 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2024/04/09 18:17:32.056521 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2024/04/09 18:17:32.056811 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2024/04/09 18:17:32.057713 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2024/04/09 18:17:32.057981 [INF] 
+[1] 2024/04/09 18:17:32.058285 [INF]          https://docs.nats.io/jetstream
+[1] 2024/04/09 18:17:32.058551 [INF] 
+[1] 2024/04/09 18:17:32.058909 [INF] ---------------- JETSTREAM ----------------
+[1] 2024/04/09 18:17:32.059262 [INF]   Max Memory:      30.00 GB
+[1] 2024/04/09 18:17:32.059646 [INF]   Max Storage:     60.00 GB
+[1] 2024/04/09 18:17:32.060372 [INF]   Store Directory: "/var/lib/nats/jetstream/store/jetstream"
+[1] 2024/04/09 18:17:32.061154 [INF] -------------------------------------------
+[1] 2024/04/09 18:17:32.061599 [DBG]   Exports:
+[1] 2024/04/09 18:17:32.062022 [DBG]      $JS.API.>
+[1] 2024/04/09 18:17:32.062552 [DBG] Enabled JetStream for account "$G"
+[1] 2024/04/09 18:17:32.062813 [DBG]   Max Memory:      -1 B
+[1] 2024/04/09 18:17:32.063694 [DBG]   Max Storage:     -1 B
+[1] 2024/04/09 18:17:32.065818 [DBG] JetStream state for account "$G" recovered
+[1] 2024/04/09 18:17:32.066154 [INF] Starting JetStream cluster
+[1] 2024/04/09 18:17:32.066653 [DBG] JetStream cluster checking for stable cluster name and peers
+[1] 2024/04/09 18:17:32.066914 [INF] Creating JetStream metadata controller
+[1] 2024/04/09 18:17:32.070515 [INF] JetStream cluster bootstrapping
+[1] 2024/04/09 18:17:32.071080 [DBG] JetStream cluster initial peers: [5rpweUtA]
+[1] 2024/04/09 18:17:32.071334 [DBG] Determining expected peer size for JetStream meta group
+[1] 2024/04/09 18:17:32.071657 [DBG] Adjusting expected peer set size to 3 with 1 known
+[1] 2024/04/09 18:17:32.072577 [DBG] RAFT [5rpweUtA - _meta_] Started
+[1] 2024/04/09 18:17:32.073226 [DBG] RAFT [5rpweUtA - _meta_] Starting campaign
+[1] 2024/04/09 18:17:32.073758 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2024/04/09 18:17:32.074930 [DBG] Get non local IPs for "0.0.0.0"
+[1] 2024/04/09 18:17:32.073870 [DBG] Starting metadata monitor
+[1] 2024/04/09 18:17:32.076549 [DBG]   ip=172.25.255.4
+[1] 2024/04/09 18:17:32.077922 [INF] Server is ready
+[1] 2024/04/09 18:17:32.078004 [INF] Cluster name is nat_cluster
+[1] 2024/04/09 18:17:32.078899 [INF] Listening for route connections on 0.0.0.0:6222
+[1] 2024/04/09 18:17:32.081266 [DBG] maxprocs: Leaving GOMAXPROCS=56: CPU quota undefined
+[1] 2024/04/09 18:17:32.084243 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.3:6222)
+[1] 2024/04/09 18:17:32.084864 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:17:32.092940 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:17:32.093360 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.3:6222)
+[1] 2024/04/09 18:17:32.093057 [DBG] 172.25.255.3:6222 - rid:7 - Route connect msg sent
+[1] 2024/04/09 18:17:32.094762 [INF] 172.25.255.2:36646 - rid:8 - Route connection created
+[1] 2024/04/09 18:17:32.094806 [INF] 172.25.255.3:6222 - rid:7 - Route connection created
+[1] 2024/04/09 18:17:32.094884 [DBG] 172.25.255.2:6222 - rid:9 - Route connect msg sent
+[1] 2024/04/09 18:17:32.095990 [INF] 172.25.255.2:6222 - rid:9 - Route connection created
+[1] 2024/04/09 18:17:32.094976 [DBG] 172.25.255.2:6222 - rid:10 - Route connect msg sent
+[1] 2024/04/09 18:17:32.094983 [DBG] 172.25.255.3:6222 - rid:12 - Route connect msg sent
+[1] 2024/04/09 18:17:32.095002 [INF] 172.25.255.2:36644 - rid:11 - Route connection created
+[1] 2024/04/09 18:17:32.095046 [DBG] 172.25.255.3:6222 - rid:7 - Sent local subscriptions to route
+[1] 2024/04/09 18:17:32.096769 [INF] 172.25.255.2:6222 - rid:10 - Route connection created
+[1] 2024/04/09 18:17:32.097162 [INF] 172.25.255.3:6222 - rid:12 - Route connection created
+[1] 2024/04/09 18:17:32.097757 [DBG] 172.25.255.3:6222 - rid:7 - Registering remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN" for account "$SYS"
+[1] 2024/04/09 18:17:32.097860 [INF] 172.25.255.3:51546 - rid:13 - Route connection created
+[1] 2024/04/09 18:17:32.097885 [DBG] 172.25.255.2:36646 - rid:8 - Registering remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC"
+[1] 2024/04/09 18:17:32.097994 [DBG] 172.25.255.2:6222 - rid:10 - Registering remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC"
+[1] 2024/04/09 18:17:32.098356 [DBG] 172.25.255.3:6222 - rid:12 - Registering remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:32.099802 [INF] 172.25.255.3:6222 - rid:12 - Router connection closed: Client Closed
+[1] 2024/04/09 18:17:32.098483 [DBG] 172.25.255.2:6222 - rid:9 - Sent local subscriptions to route
+[1] 2024/04/09 18:17:32.100523 [DBG] 172.25.255.2:6222 - rid:9 - Registering remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC" for account "$SYS"
+[1] 2024/04/09 18:17:32.100858 [INF] 172.25.255.2:6222 - rid:9 - Router connection closed: Client Closed
+[1] 2024/04/09 18:17:32.100731 [DBG] 172.25.255.2:36644 - rid:11 - Detected duplicate remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC"
+[1] 2024/04/09 18:17:32.101434 [INF] 172.25.255.2:36644 - rid:11 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:17:32.100737 [DBG] 172.25.255.3:51546 - rid:13 - Detected duplicate remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:32.102054 [INF] 172.25.255.3:51546 - rid:13 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:17:32.100744 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:17:32.102786 [DBG] Attempting reconnect for solicited route "nats://nats-2:6222"
+[1] 2024/04/09 18:17:32.111881 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.3:6222)
+[1] 2024/04/09 18:17:32.112801 [DBG] 172.25.255.3:6222 - rid:14 - Route connect msg sent
+[1] 2024/04/09 18:17:32.113156 [INF] 172.25.255.3:6222 - rid:14 - Route connection created
+[1] 2024/04/09 18:17:32.113531 [DBG] 172.25.255.3:6222 - rid:14 - Registering remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:32.132827 [INF] 172.25.255.2:36658 - rid:15 - Route connection created
+[1] 2024/04/09 18:17:32.133744 [DBG] 172.25.255.2:36658 - rid:15 - Registering remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC"
+[1] 2024/04/09 18:17:32.138526 [INF] 172.25.255.3:51558 - rid:16 - Route connection created
+[1] 2024/04/09 18:17:32.139347 [DBG] 172.25.255.3:51558 - rid:16 - Registering remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:32.150165 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:17:32.150881 [DBG] 172.25.255.2:6222 - rid:17 - Route connect msg sent
+[1] 2024/04/09 18:17:32.151296 [INF] 172.25.255.2:6222 - rid:17 - Route connection created
+[1] 2024/04/09 18:17:32.151404 [DBG] 172.25.255.2:6222 - rid:17 - Route pool size reached, closing extra connection to "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC"
+[1] 2024/04/09 18:17:32.151898 [DBG] 172.25.255.2:6222 - rid:17 - Detected duplicate remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC"
+[1] 2024/04/09 18:17:32.152130 [INF] 172.25.255.2:6222 - rid:17 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:17:32.172336 [INF] 172.25.255.3:51572 - rid:18 - Route connection created
+[1] 2024/04/09 18:17:32.173019 [DBG] 172.25.255.3:51572 - rid:18 - Registering remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:32.173357 [WRN] Waiting for routing to be established...
+[1] 2024/04/09 18:17:32.173664 [DBG] Recovered JetStream cluster metadata
+[1] 2024/04/09 18:17:32.173931 [DBG] JetStream cluster checking for orphans
+[1] 2024/04/09 18:17:32.174306 [WRN] JetStream has not established contact with a meta leader
+[1] 2024/04/09 18:17:32.186253 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.3:6222)
+[1] 2024/04/09 18:17:32.186852 [DBG] 172.25.255.3:6222 - rid:19 - Route connect msg sent
+[1] 2024/04/09 18:17:32.187254 [INF] 172.25.255.3:6222 - rid:19 - Route connection created
+[1] 2024/04/09 18:17:32.187356 [DBG] 172.25.255.3:6222 - rid:19 - Route pool size reached, closing extra connection to "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:32.188116 [DBG] 172.25.255.3:6222 - rid:19 - Detected duplicate remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:32.188434 [INF] 172.25.255.3:6222 - rid:19 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:17:32.188270 [INF] 172.25.255.3:51588 - rid:20 - Route connection created
+[1] 2024/04/09 18:17:32.190135 [INF] 172.25.255.3:51588 - rid:20 - Router connection closed: Client Closed
+[1] 2024/04/09 18:17:32.325898 [DBG] RAFT [5rpweUtA - _meta_] Switching to candidate
+[1] 2024/04/09 18:17:32.326545 [DBG] RAFT [5rpweUtA - _meta_] Sending out voteRequest {term:1 lastTerm:0 lastIndex:0 candidate:5rpweUtA reply:}
+[1] 2024/04/09 18:17:32.328116 [DBG] RAFT [5rpweUtA - _meta_] Received a voteResponse &{term:1 peer:HFT3WXRv granted:true}
+[1] 2024/04/09 18:17:32.328450 [DBG] RAFT [5rpweUtA - _meta_] Switching to leader
+[1] 2024/04/09 18:17:32.328960 [INF] Self is new JetStream cluster metadata leader
+[1] 2024/04/09 18:17:32.329467 [DBG] Checking JetStream cluster size
+[1] 2024/04/09 18:17:32.330948 [DBG] RAFT [5rpweUtA - _meta_] Added peer "HFT3WXRv"
+[1] 2024/04/09 18:17:32.331249 [DBG] RAFT [5rpweUtA - _meta_] Decreasing our clustersize: 3 -> 2
+[1] 2024/04/09 18:17:32.331745 [DBG] RAFT [5rpweUtA - _meta_] Added peer "HFT3WXRv"
+[1] 2024/04/09 18:17:32.332305 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:17:32.333758 [DBG] RAFT [5rpweUtA - _meta_] Added peer "HFT3WXRv"
+[1] 2024/04/09 18:17:32.334122 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:17:33.078531 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:17:33.088620 [INF] 172.25.255.3:51602 - rid:21 - Route connection created
+[1] 2024/04/09 18:17:33.090909 [INF] 172.25.255.3:51602 - rid:21 - Router connection closed: Client Closed
+[1] 2024/04/09 18:17:33.091806 [INF] 172.25.255.3:51618 - rid:22 - Route connection created
+[1] 2024/04/09 18:17:33.093181 [DBG] 172.25.255.3:51618 - rid:22 - Detected duplicate remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:33.093570 [INF] 172.25.255.3:51618 - rid:22 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:17:33.107575 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:17:33.116046 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:17:33.117808 [INF] 172.25.255.2:36670 - rid:23 - Route connection created
+[1] 2024/04/09 18:17:33.120613 [DBG] 172.25.255.2:36670 - rid:23 - Sent local subscriptions to route
+[1] 2024/04/09 18:17:33.121292 [DBG] 172.25.255.2:36670 - rid:23 - Registering remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC" for account "$SYS"
+[1] 2024/04/09 18:17:33.132766 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:17:33.133742 [DBG] 172.25.255.2:6222 - rid:24 - Route connect msg sent
+[1] 2024/04/09 18:17:33.134442 [INF] 172.25.255.2:6222 - rid:24 - Route connection created
+[1] 2024/04/09 18:17:33.134699 [DBG] 172.25.255.2:6222 - rid:24 - Detected duplicate remote route "NDD44FVDB6WTTU7PEP7AYD2S5LV7C77QKZONNYOEWTH2PVBU4FLNSFZC"
+[1] 2024/04/09 18:17:33.135439 [INF] 172.25.255.2:6222 - rid:24 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:17:33.136028 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:17:33.147674 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.3:6222)
+[1] 2024/04/09 18:17:33.148560 [DBG] 172.25.255.3:6222 - rid:25 - Route connect msg sent
+[1] 2024/04/09 18:17:33.149081 [INF] 172.25.255.3:6222 - rid:25 - Route connection created
+[1] 2024/04/09 18:17:33.149252 [DBG] 172.25.255.3:6222 - rid:25 - Route pool size reached, closing extra connection to "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:33.150130 [DBG] 172.25.255.3:6222 - rid:25 - Detected duplicate remote route "NBRQKOKQLXNYXC6QXABBKTHZLKFTRPDBBLOZCGGKNWCBHWVDI3P6XERN"
+[1] 2024/04/09 18:17:33.150469 [INF] 172.25.255.3:6222 - rid:25 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:17:33.177633 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:17:33.214213 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:17:33.217388 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:17:33.242444 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:17:34.172668 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:17:34.332502 [DBG] RAFT [5rpweUtA - _meta_] Being asked to catch up follower: "sv1FOKru"
+[1] 2024/04/09 18:17:34.333181 [DBG] RAFT [5rpweUtA - _meta_] Need to send snapshot to follower
+[1] 2024/04/09 18:17:34.333879 [DBG] RAFT [5rpweUtA - _meta_] Finished catching up
+[1] 2024/04/09 18:17:34.335544 [DBG] RAFT [5rpweUtA - _meta_] Added peer "sv1FOKru"
+[1] 2024/04/09 18:17:34.336147 [DBG] RAFT [5rpweUtA - _meta_] Expanding our clustersize: 2 -> 3
+[1] 2024/04/09 18:17:34.337202 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:18:03.108092 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:18:03.116649 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:18:03.136046 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:18:03.177970 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:18:03.215236 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:18:03.217490 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:18:03.242801 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:18:04.173422 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:18:33.108970 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:18:33.117391 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:18:33.136891 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:18:33.178258 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:18:33.215786 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:18:33.218128 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:18:33.243736 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:18:34.173954 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:19:03.109706 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:19:03.118428 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:19:03.137690 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:19:03.179662 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:19:03.216044 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:19:03.219556 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:19:03.244562 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:19:04.174743 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:19:33.110123 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:19:33.119553 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:19:33.138486 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:19:33.180113 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:19:33.216953 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:19:33.220453 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:19:33.245869 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:19:34.176091 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:20:03.110194 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:20:03.119818 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:20:03.139420 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:20:03.180849 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:20:03.217196 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:20:03.220900 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:20:03.247106 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:20:04.176240 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:20:33.111500 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:20:33.120267 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:20:33.140012 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:20:33.181881 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:20:33.217476 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:20:33.221857 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:20:33.247120 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:20:34.177399 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:21:03.112319 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:21:03.122072 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:21:03.140830 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:21:03.182853 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:21:03.218732 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:21:03.222538 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:21:03.248723 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:21:04.178460 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:21:33.113402 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:21:33.123391 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:21:33.142303 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:21:33.184592 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:21:33.220345 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:21:33.223918 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:21:33.249995 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:21:34.179809 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:22:03.114585 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:22:03.125292 [DBG] 172.25.255.3:6222 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:22:03.143450 [DBG] 172.25.255.3:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:22:03.186097 [DBG] 172.25.255.2:36646 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:22:03.221741 [DBG] 172.25.255.2:36658 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:22:03.225408 [DBG] 172.25.255.3:51558 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:22:03.251494 [DBG] 172.25.255.3:51572 - rid:18 - Router Ping Timer
+[1] 2024/04/09 18:22:04.180973 [DBG] 172.25.255.2:36670 - rid:23 - Router Ping Timer
+[1] 2024/04/09 18:22:16.176556 [DBG] Trapped "terminated" signal
+[1] 2024/04/09 18:22:16.177133 [DBG] Stepping down all leader raft nodes
+[1] 2024/04/09 18:22:16.177735 [DBG] RAFT [5rpweUtA - _meta_] Being asked to stepdown
+[1] 2024/04/09 18:22:16.178406 [DBG] RAFT [5rpweUtA - _meta_] Selected "HFT3WXRv" for new leader
+[1] 2024/04/09 18:22:16.178949 [DBG] RAFT [5rpweUtA - _meta_] Stepping down due to leadership transfer
+[1] 2024/04/09 18:22:16.179364 [DBG] RAFT [5rpweUtA - _meta_] Switching to follower
+[1] 2024/04/09 18:22:16.179016 [INF] Initiating Shutdown...
+[1] 2024/04/09 18:22:16.180637 [INF] Initiating JetStream Shutdown...
+[1] 2024/04/09 18:22:16.181464 [INF] JetStream cluster no metadata leader
+[1] 2024/04/09 18:22:16.182004 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[1] 2024/04/09 18:22:16.182946 [INF] JetStream Shutdown
+[1] 2024/04/09 18:22:16.183386 [DBG] Shutting down all raft nodes
+[1] 2024/04/09 18:22:16.183887 [DBG] SYSTEM - System connection closed: Internal Client
+[1] 2024/04/09 18:22:16.184160 [DBG] RAFT [5rpweUtA - _meta_] Shutdown
+[1] 2024/04/09 18:22:16.184212 [DBG] Exiting metadata monitor
+[1] 2024/04/09 18:22:16.186394 [DBG] Route accept loop exiting..
+[1] 2024/04/09 18:22:16.186446 [INF] 172.25.255.2:36646 - rid:8 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:22:16.186456 [DBG] Client accept loop exiting..
+[1] 2024/04/09 18:22:16.186472 [DBG] SYSTEM - System connection closed: Client Closed
+[1] 2024/04/09 18:22:16.186922 [INF] 172.25.255.3:6222 - rid:14 - Router connection closed: Client Closed
+[1] 2024/04/09 18:22:16.187465 [INF] 172.25.255.2:6222 - rid:10 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:22:16.190692 [INF] 172.25.255.2:36658 - rid:15 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:22:16.188624 [INF] 172.25.255.3:51558 - rid:16 - Router connection closed: Client Closed
+[1] 2024/04/09 18:22:16.188862 [INF] 172.25.255.3:6222 - rid:7 - Router connection closed: Client Closed
+[1] 2024/04/09 18:22:16.191480 [INF] 172.25.255.3:51572 - rid:18 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:22:16.192177 [INF] 172.25.255.2:36670 - rid:23 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:22:16.191861 [DBG] 172.25.255.3:6222 - rid:7 - Removing 50 subscriptions for account "$SYS"
+[1] 2024/04/09 18:22:16.193812 [INF] Server Exiting..
+[1] 2024/04/09 18:23:56.168599 [INF] Starting nats-server
+[1] 2024/04/09 18:23:56.169155 [INF]   Version:  2.10.12
+[1] 2024/04/09 18:23:56.169381 [INF]   Git:      [121169ea]
+[1] 2024/04/09 18:23:56.169657 [DBG]   Go build: go1.21.8
+[1] 2024/04/09 18:23:56.169930 [INF]   Cluster:  nat_cluster
+[1] 2024/04/09 18:23:56.170153 [INF]   Name:     myserver3
+[1] 2024/04/09 18:23:56.170432 [INF]   Node:     5rpweUtA
+[1] 2024/04/09 18:23:56.170707 [INF]   ID:       NDA4YGTH6XSDMOJL6NMUR3GFLLVYX7WAEJMBNLL2C223HUHJX7JTKWJP
+[1] 2024/04/09 18:23:56.171313 [INF] Using configuration file: /etc/nats/nats.conf
+[1] 2024/04/09 18:23:56.172530 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2024/04/09 18:23:56.172974 [INF] Starting JetStream
+[1] 2024/04/09 18:23:56.296411 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2024/04/09 18:23:56.296739 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2024/04/09 18:23:56.296993 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2024/04/09 18:23:56.297315 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2024/04/09 18:23:56.297589 [INF] 
+[1] 2024/04/09 18:23:56.297869 [INF]          https://docs.nats.io/jetstream
+[1] 2024/04/09 18:23:56.298152 [INF] 
+[1] 2024/04/09 18:23:56.298494 [INF] ---------------- JETSTREAM ----------------
+[1] 2024/04/09 18:23:56.298728 [INF]   Max Memory:      30.00 GB
+[1] 2024/04/09 18:23:56.299271 [INF]   Max Storage:     60.00 GB
+[1] 2024/04/09 18:23:56.299555 [INF]   Store Directory: "/var/lib/nats/storage/jetstream/jetstream"
+[1] 2024/04/09 18:23:56.299810 [INF] -------------------------------------------
+[1] 2024/04/09 18:23:56.300213 [DBG]   Exports:
+[1] 2024/04/09 18:23:56.300516 [DBG]      $JS.API.>
+[1] 2024/04/09 18:23:56.300785 [DBG] Enabled JetStream for account "$G"
+[1] 2024/04/09 18:23:56.301094 [DBG]   Max Memory:      -1 B
+[1] 2024/04/09 18:23:56.301335 [DBG]   Max Storage:     -1 B
+[1] 2024/04/09 18:23:56.597620 [DBG] JetStream state for account "$G" recovered
+[1] 2024/04/09 18:23:56.597904 [INF] Starting JetStream cluster
+[1] 2024/04/09 18:23:56.598177 [DBG] JetStream cluster checking for stable cluster name and peers
+[1] 2024/04/09 18:23:56.598595 [INF] Creating JetStream metadata controller
+[1] 2024/04/09 18:23:57.277656 [INF] JetStream cluster bootstrapping
+[1] 2024/04/09 18:23:57.277967 [DBG] JetStream cluster initial peers: [5rpweUtA]
+[1] 2024/04/09 18:23:57.279239 [DBG] Determining expected peer size for JetStream meta group
+[1] 2024/04/09 18:23:57.279801 [DBG] Adjusting expected peer set size to 3 with 1 known
+[1] 2024/04/09 18:23:57.369064 [DBG] RAFT [5rpweUtA - _meta_] Started
+[1] 2024/04/09 18:23:57.369602 [DBG] RAFT [5rpweUtA - _meta_] Starting campaign
+[1] 2024/04/09 18:23:57.370148 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2024/04/09 18:23:57.370453 [DBG] Get non local IPs for "0.0.0.0"
+[1] 2024/04/09 18:23:57.370206 [DBG] Starting metadata monitor
+[1] 2024/04/09 18:23:57.371028 [DBG]   ip=172.25.255.3
+[1] 2024/04/09 18:23:57.371804 [INF] Server is ready
+[1] 2024/04/09 18:23:57.371993 [INF] Cluster name is nat_cluster
+[1] 2024/04/09 18:23:57.372708 [INF] Listening for route connections on 0.0.0.0:6222
+[1] 2024/04/09 18:23:57.372852 [DBG] maxprocs: Leaving GOMAXPROCS=56: CPU quota undefined
+[1] 2024/04/09 18:23:57.374961 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:23:57.375086 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:23:57.375678 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:23:57.375700 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:23:57.375730 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:23:57.376281 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:23:57.388054 [DBG] 172.25.255.2:6222 - rid:7 - Route connect msg sent
+[1] 2024/04/09 18:23:57.389077 [DBG] 172.25.255.2:6222 - rid:8 - Route connect msg sent
+[1] 2024/04/09 18:23:57.389493 [INF] 172.25.255.2:6222 - rid:8 - Route connection created
+[1] 2024/04/09 18:23:57.389200 [INF] 172.25.255.2:6222 - rid:7 - Route connection created
+[1] 2024/04/09 18:23:57.389793 [DBG] 172.25.255.2:6222 - rid:7 - Sent local subscriptions to route
+[1] 2024/04/09 18:23:57.390477 [DBG] 172.25.255.2:6222 - rid:7 - Registering remote route "NAGDABIJ5OUYUIIYSVGVCFQY7NZ5HJ5YP5CHK3QTBRKZ6ZRJMXEJB2T7" for account "$SYS"
+[1] 2024/04/09 18:23:57.390689 [DBG] 172.25.255.2:6222 - rid:8 - Registering remote route "NAGDABIJ5OUYUIIYSVGVCFQY7NZ5HJ5YP5CHK3QTBRKZ6ZRJMXEJB2T7"
+[1] 2024/04/09 18:23:57.419191 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:23:57.419986 [DBG] 172.25.255.2:6222 - rid:9 - Route connect msg sent
+[1] 2024/04/09 18:23:57.420378 [INF] 172.25.255.2:6222 - rid:9 - Route connection created
+[1] 2024/04/09 18:23:57.420585 [DBG] 172.25.255.2:6222 - rid:9 - Registering remote route "NAGDABIJ5OUYUIIYSVGVCFQY7NZ5HJ5YP5CHK3QTBRKZ6ZRJMXEJB2T7"
+[1] 2024/04/09 18:23:57.469943 [WRN] Waiting for routing to be established...
+[1] 2024/04/09 18:23:57.470664 [DBG] Recovered JetStream cluster metadata
+[1] 2024/04/09 18:23:57.471151 [DBG] JetStream cluster checking for orphans
+[1] 2024/04/09 18:23:57.471698 [WRN] JetStream has not established contact with a meta leader
+[1] 2024/04/09 18:23:57.489478 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:23:57.490314 [DBG] 172.25.255.2:6222 - rid:10 - Route connect msg sent
+[1] 2024/04/09 18:23:57.490708 [INF] 172.25.255.2:6222 - rid:10 - Route connection created
+[1] 2024/04/09 18:23:57.491147 [DBG] 172.25.255.2:6222 - rid:10 - Registering remote route "NAGDABIJ5OUYUIIYSVGVCFQY7NZ5HJ5YP5CHK3QTBRKZ6ZRJMXEJB2T7"
+[1] 2024/04/09 18:23:57.535497 [INF] 172.25.255.4:39928 - rid:11 - Route connection created
+[1] 2024/04/09 18:23:57.536556 [INF] 172.25.255.4:39940 - rid:12 - Route connection created
+[1] 2024/04/09 18:23:57.536719 [DBG] RAFT [5rpweUtA - _meta_] Received a voteRequest &{term:1 lastTerm:0 lastIndex:0 candidate:sv1FOKru reply:$NRG.R.xvirOUyR}
+[1] 2024/04/09 18:23:57.553173 [DBG] 172.25.255.4:39928 - rid:11 - Sent local subscriptions to route
+[1] 2024/04/09 18:23:57.553526 [DBG] 172.25.255.4:39928 - rid:11 - Registering remote route "NCIK6KJRJRSZMDDKJECM6UBMDDEVBZDQX2UJ3XGF2HRUZKY2VTVVSGKE" for account "$SYS"
+[1] 2024/04/09 18:23:57.555488 [DBG] 172.25.255.4:39940 - rid:12 - Registering remote route "NCIK6KJRJRSZMDDKJECM6UBMDDEVBZDQX2UJ3XGF2HRUZKY2VTVVSGKE"
+[1] 2024/04/09 18:23:57.566563 [DBG] RAFT [5rpweUtA - _meta_] Sending a voteResponse &{term:1 peer:5rpweUtA granted:true} -> "$NRG.R.xvirOUyR"
+[1] 2024/04/09 18:23:57.569720 [DBG] RAFT [5rpweUtA - _meta_] AppendEntry updating leader to "sv1FOKru"
+[1] 2024/04/09 18:23:57.571267 [INF] JetStream cluster new metadata leader: myserver2/nat_cluster
+[1] 2024/04/09 18:23:57.573109 [DBG] RAFT [5rpweUtA - _meta_] Update peers from leader to map[sv1FOKru:0xc000320048]
+[1] 2024/04/09 18:23:57.582581 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:23:57.612111 [INF] 172.25.255.4:39952 - rid:13 - Route connection created
+[1] 2024/04/09 18:23:57.613154 [DBG] 172.25.255.4:39952 - rid:13 - Registering remote route "NCIK6KJRJRSZMDDKJECM6UBMDDEVBZDQX2UJ3XGF2HRUZKY2VTVVSGKE"
+[1] 2024/04/09 18:23:57.622010 [DBG] RAFT [5rpweUtA - _meta_] Added peer "5rpweUtA"
+[1] 2024/04/09 18:23:57.622328 [DBG] RAFT [5rpweUtA - _meta_] Decreasing our clustersize: 3 -> 2
+[1] 2024/04/09 18:23:57.633388 [DBG] RAFT [5rpweUtA - _meta_] Added peer "5rpweUtA"
+[1] 2024/04/09 18:23:57.633820 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:23:57.643930 [DBG] RAFT [5rpweUtA - _meta_] Added peer "5rpweUtA"
+[1] 2024/04/09 18:23:57.653276 [INF] 172.25.255.4:39968 - rid:14 - Route connection created
+[1] 2024/04/09 18:23:57.653466 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:23:57.654415 [DBG] 172.25.255.4:39968 - rid:14 - Registering remote route "NCIK6KJRJRSZMDDKJECM6UBMDDEVBZDQX2UJ3XGF2HRUZKY2VTVVSGKE"
+[1] 2024/04/09 18:23:57.665789 [DBG] RAFT [5rpweUtA - _meta_] Added peer "HFT3WXRv"
+[1] 2024/04/09 18:23:57.666295 [DBG] RAFT [5rpweUtA - _meta_] Expanding our clustersize: 2 -> 3
+[1] 2024/04/09 18:23:57.675627 [DBG] RAFT [5rpweUtA - _meta_] Added peer "HFT3WXRv"
+[1] 2024/04/09 18:23:57.676012 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:23:57.694636 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:23:58.164707 [INF] 172.25.255.2:48646 - rid:15 - Route connection created
+[1] 2024/04/09 18:23:58.165770 [INF] 172.25.255.2:48652 - rid:16 - Route connection created
+[1] 2024/04/09 18:23:58.169051 [DBG] 172.25.255.2:48652 - rid:16 - Detected duplicate remote route "NAGDABIJ5OUYUIIYSVGVCFQY7NZ5HJ5YP5CHK3QTBRKZ6ZRJMXEJB2T7"
+[1] 2024/04/09 18:23:58.169514 [INF] 172.25.255.2:48652 - rid:16 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:23:58.173253 [INF] 172.25.255.2:48646 - rid:15 - Router connection closed: Client Closed
+[1] 2024/04/09 18:23:58.371685 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:23:58.379235 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:23:58.379360 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:23:58.380015 [DBG] 172.25.255.4:6222 - rid:17 - Route connect msg sent
+[1] 2024/04/09 18:23:58.380949 [INF] 172.25.255.4:6222 - rid:17 - Route connection created
+[1] 2024/04/09 18:23:58.380631 [DBG] 172.25.255.4:6222 - rid:18 - Route connect msg sent
+[1] 2024/04/09 18:23:58.381773 [INF] 172.25.255.4:6222 - rid:18 - Route connection created
+[1] 2024/04/09 18:23:58.381238 [DBG] 172.25.255.4:6222 - rid:17 - Route pool size reached, closing extra connection to "NCIK6KJRJRSZMDDKJECM6UBMDDEVBZDQX2UJ3XGF2HRUZKY2VTVVSGKE"
+[1] 2024/04/09 18:23:58.382591 [DBG] 172.25.255.4:6222 - rid:17 - Detected duplicate remote route "NCIK6KJRJRSZMDDKJECM6UBMDDEVBZDQX2UJ3XGF2HRUZKY2VTVVSGKE"
+[1] 2024/04/09 18:23:58.383072 [INF] 172.25.255.4:6222 - rid:17 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:23:58.382161 [DBG] 172.25.255.4:6222 - rid:18 - Detected duplicate remote route "NCIK6KJRJRSZMDDKJECM6UBMDDEVBZDQX2UJ3XGF2HRUZKY2VTVVSGKE"
+[1] 2024/04/09 18:23:58.384203 [INF] 172.25.255.4:6222 - rid:18 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:23:58.452181 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:23:58.498108 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:23:58.568398 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:23:58.595192 [DBG] 172.25.255.4:39928 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:23:58.640525 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:23:58.665850 [DBG] 172.25.255.4:39940 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:23:58.741823 [DBG] 172.25.255.4:39968 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:23:58.789565 [DBG] 172.25.255.4:39952 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:24:28.453302 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:24:28.498766 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:24:28.569299 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:24:28.595919 [DBG] 172.25.255.4:39928 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:24:28.641344 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:24:28.666835 [DBG] 172.25.255.4:39940 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:24:28.742226 [DBG] 172.25.255.4:39968 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:24:28.790469 [DBG] 172.25.255.4:39952 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:24:58.454192 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:24:58.499453 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:24:58.569723 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:24:58.597172 [DBG] 172.25.255.4:39928 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:24:58.642186 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:24:58.667386 [DBG] 172.25.255.4:39940 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:24:58.742443 [DBG] 172.25.255.4:39968 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:24:58.790797 [DBG] 172.25.255.4:39952 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:25:28.454372 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:25:28.499294 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:25:28.570491 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:25:28.597417 [DBG] 172.25.255.4:39928 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:25:28.641970 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:25:28.667909 [DBG] 172.25.255.4:39940 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:25:28.743091 [DBG] 172.25.255.4:39968 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:25:28.791251 [DBG] 172.25.255.4:39952 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:25:35.238536 [INF] 172.25.255.4:39968 - rid:14 - Router connection closed: Client Closed
+[1] 2024/04/09 18:25:35.238985 [DBG] 172.25.255.4:39968 - rid:14 - Removing 1 subscriptions for account "$G"
+[1] 2024/04/09 18:25:35.239304 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:25:35.241523 [INF] 172.25.255.4:39940 - rid:12 - Router connection closed: Client Closed
+[1] 2024/04/09 18:25:35.242030 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:25:35.242072 [INF] 172.25.255.4:39928 - rid:11 - Router connection closed: Client Closed
+[1] 2024/04/09 18:25:35.243139 [DBG] 172.25.255.4:39928 - rid:11 - Removing 50 subscriptions for account "$SYS"
+[1] 2024/04/09 18:25:35.243621 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:25:35.242736 [INF] 172.25.255.4:39952 - rid:13 - Router connection closed: Client Closed
+[1] 2024/04/09 18:25:35.244619 [DBG] Trapped "terminated" signal
+[1] 2024/04/09 18:25:35.244980 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:25:35.245728 [DBG] Stepping down all leader raft nodes
+[1] 2024/04/09 18:25:35.246598 [INF] Initiating Shutdown...
+[1] 2024/04/09 18:25:35.246999 [INF] Initiating JetStream Shutdown...
+[1] 2024/04/09 18:25:35.247312 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[1] 2024/04/09 18:25:35.247683 [DBG] SYSTEM - System connection closed: Internal Client
+[1] 2024/04/09 18:25:35.247967 [DBG] RAFT [5rpweUtA - _meta_] Shutdown
+[1] 2024/04/09 18:25:35.247787 [INF] JetStream Shutdown
+[1] 2024/04/09 18:25:35.248799 [DBG] Route accept loop exiting..
+[1] 2024/04/09 18:25:35.249021 [INF] 172.25.255.2:6222 - rid:8 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:25:35.249657 [INF] 172.25.255.2:6222 - rid:9 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:25:35.250372 [INF] 172.25.255.2:6222 - rid:10 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:25:35.249036 [DBG] Client accept loop exiting..
+[1] 2024/04/09 18:25:35.251333 [DBG] Exiting metadata monitor
+[1] 2024/04/09 18:25:35.250749 [INF] 172.25.255.2:6222 - rid:7 - Router connection closed: Server Shutdown
+[1] 2024/04/09 18:25:35.249069 [DBG] SYSTEM - System connection closed: Client Closed
+[1] 2024/04/09 18:25:35.252588 [INF] Server Exiting..
+[1] 2024/04/09 18:26:19.869463 [INF] Starting nats-server
+[1] 2024/04/09 18:26:19.870106 [INF]   Version:  2.10.12
+[1] 2024/04/09 18:26:19.870341 [INF]   Git:      [121169ea]
+[1] 2024/04/09 18:26:19.870642 [DBG]   Go build: go1.21.8
+[1] 2024/04/09 18:26:19.870914 [INF]   Cluster:  nat_cluster
+[1] 2024/04/09 18:26:19.871246 [INF]   Name:     myserver3
+[1] 2024/04/09 18:26:19.871551 [INF]   Node:     5rpweUtA
+[1] 2024/04/09 18:26:19.872413 [INF]   ID:       NC6RYDKC7Z22LXIXJBSEMXAT2TJOBSXBSJ2DAVTEYL4LRK7RDXG7NJKH
+[1] 2024/04/09 18:26:19.872730 [INF] Using configuration file: /etc/nats/nats.conf
+[1] 2024/04/09 18:26:19.874027 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2024/04/09 18:26:19.874555 [INF] Starting JetStream
+[1] 2024/04/09 18:26:19.959141 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2024/04/09 18:26:19.959811 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2024/04/09 18:26:19.960777 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2024/04/09 18:26:19.961541 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2024/04/09 18:26:19.961789 [INF] 
+[1] 2024/04/09 18:26:19.962085 [INF]          https://docs.nats.io/jetstream
+[1] 2024/04/09 18:26:19.962344 [INF] 
+[1] 2024/04/09 18:26:19.963025 [INF] ---------------- JETSTREAM ----------------
+[1] 2024/04/09 18:26:19.963300 [INF]   Max Memory:      30.00 GB
+[1] 2024/04/09 18:26:19.963785 [INF]   Max Storage:     60.00 GB
+[1] 2024/04/09 18:26:19.964435 [INF]   Store Directory: "/var/lib/nats/storage/jetstream"
+[1] 2024/04/09 18:26:19.964681 [INF] -------------------------------------------
+[1] 2024/04/09 18:26:19.965114 [DBG]   Exports:
+[1] 2024/04/09 18:26:19.965359 [DBG]      $JS.API.>
+[1] 2024/04/09 18:26:19.966464 [DBG] Enabled JetStream for account "$G"
+[1] 2024/04/09 18:26:19.966998 [DBG]   Max Memory:      -1 B
+[1] 2024/04/09 18:26:19.967245 [DBG]   Max Storage:     -1 B
+[1] 2024/04/09 18:26:20.071210 [DBG] JetStream state for account "$G" recovered
+[1] 2024/04/09 18:26:20.071623 [INF] Starting JetStream cluster
+[1] 2024/04/09 18:26:20.071894 [DBG] JetStream cluster checking for stable cluster name and peers
+[1] 2024/04/09 18:26:20.072153 [INF] Creating JetStream metadata controller
+[1] 2024/04/09 18:26:20.305920 [INF] JetStream cluster recovering state
+[1] 2024/04/09 18:26:20.523347 [DBG] RAFT [5rpweUtA - _meta_] Started
+[1] 2024/04/09 18:26:20.523743 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2024/04/09 18:26:20.524134 [DBG] Get non local IPs for "0.0.0.0"
+[1] 2024/04/09 18:26:20.523867 [DBG] Starting metadata monitor
+[1] 2024/04/09 18:26:20.524710 [DBG]   ip=172.25.255.3
+[1] 2024/04/09 18:26:20.525252 [INF] Server is ready
+[1] 2024/04/09 18:26:20.525354 [INF] Cluster name is nat_cluster
+[1] 2024/04/09 18:26:20.525992 [INF] Listening for route connections on 0.0.0.0:6222
+[1] 2024/04/09 18:26:20.526257 [DBG] maxprocs: Leaving GOMAXPROCS=56: CPU quota undefined
+[1] 2024/04/09 18:26:20.527338 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:26:20.534121 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:26:20.533063 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:26:20.533020 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:26:20.534156 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:26:20.534740 [DBG] 172.25.255.2:6222 - rid:7 - Route connect msg sent
+[1] 2024/04/09 18:26:20.535011 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:26:20.535546 [DBG] 172.25.255.2:6222 - rid:8 - Route connect msg sent
+[1] 2024/04/09 18:26:20.536607 [INF] 172.25.255.2:6222 - rid:8 - Route connection created
+[1] 2024/04/09 18:26:20.535840 [INF] 172.25.255.2:6222 - rid:7 - Route connection created
+[1] 2024/04/09 18:26:20.536256 [DBG] 172.25.255.2:6222 - rid:7 - Registering remote route "NA5GUV7BRH4IFC35D6A4XJSXVNPUK4VECXGJVFOV7LSXM5FFDJM2472X"
+[1] 2024/04/09 18:26:20.536961 [DBG] 172.25.255.2:6222 - rid:8 - Sent local subscriptions to route
+[1] 2024/04/09 18:26:20.537793 [DBG] 172.25.255.2:6222 - rid:8 - Registering remote route "NA5GUV7BRH4IFC35D6A4XJSXVNPUK4VECXGJVFOV7LSXM5FFDJM2472X" for account "$SYS"
+[1] 2024/04/09 18:26:20.555865 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:26:20.556782 [DBG] 172.25.255.2:6222 - rid:9 - Route connect msg sent
+[1] 2024/04/09 18:26:20.557078 [INF] 172.25.255.2:6222 - rid:9 - Route connection created
+[1] 2024/04/09 18:26:20.557378 [DBG] 172.25.255.2:6222 - rid:9 - Registering remote route "NA5GUV7BRH4IFC35D6A4XJSXVNPUK4VECXGJVFOV7LSXM5FFDJM2472X"
+[1] 2024/04/09 18:26:20.625434 [WRN] Waiting for routing to be established...
+[1] 2024/04/09 18:26:20.625896 [DBG] Recovered JetStream cluster metadata
+[1] 2024/04/09 18:26:20.626205 [DBG] JetStream cluster checking for orphans
+[1] 2024/04/09 18:26:20.626664 [WRN] JetStream has not established contact with a meta leader
+[1] 2024/04/09 18:26:20.647240 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:26:20.647995 [DBG] 172.25.255.2:6222 - rid:10 - Route connect msg sent
+[1] 2024/04/09 18:26:20.648335 [INF] 172.25.255.2:6222 - rid:10 - Route connection created
+[1] 2024/04/09 18:26:20.648453 [DBG] 172.25.255.2:6222 - rid:10 - Registering remote route "NA5GUV7BRH4IFC35D6A4XJSXVNPUK4VECXGJVFOV7LSXM5FFDJM2472X"
+[1] 2024/04/09 18:26:20.669387 [INF] 172.25.255.4:57538 - rid:11 - Route connection created
+[1] 2024/04/09 18:26:20.669465 [INF] 172.25.255.4:57528 - rid:12 - Route connection created
+[1] 2024/04/09 18:26:20.673173 [DBG] 172.25.255.4:57538 - rid:11 - Registering remote route "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI"
+[1] 2024/04/09 18:26:20.673256 [DBG] Trying to connect to route on 172.25.255.4:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:26:20.674054 [DBG] 172.25.255.4:6222 - rid:13 - Route connect msg sent
+[1] 2024/04/09 18:26:20.674486 [INF] 172.25.255.4:6222 - rid:13 - Route connection created
+[1] 2024/04/09 18:26:20.675449 [DBG] 172.25.255.4:57528 - rid:12 - Sent local subscriptions to route
+[1] 2024/04/09 18:26:20.675848 [DBG] 172.25.255.4:57528 - rid:12 - Registering remote route "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI" for account "$SYS"
+[1] 2024/04/09 18:26:20.675962 [DBG] 172.25.255.4:6222 - rid:13 - Detected duplicate remote route "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI"
+[1] 2024/04/09 18:26:20.676687 [INF] 172.25.255.4:6222 - rid:13 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:26:20.728201 [INF] 172.25.255.4:57546 - rid:14 - Route connection created
+[1] 2024/04/09 18:26:20.729406 [DBG] 172.25.255.4:57546 - rid:14 - Registering remote route "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI"
+[1] 2024/04/09 18:26:20.764471 [INF] 172.25.255.4:57548 - rid:15 - Route connection created
+[1] 2024/04/09 18:26:20.765262 [DBG] 172.25.255.4:57548 - rid:15 - Registering remote route "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI"
+[1] 2024/04/09 18:26:21.327218 [INF] 172.25.255.2:44060 - rid:16 - Route connection created
+[1] 2024/04/09 18:26:21.328316 [INF] 172.25.255.2:44074 - rid:17 - Route connection created
+[1] 2024/04/09 18:26:21.329463 [DBG] 172.25.255.2:44060 - rid:16 - Detected duplicate remote route "NA5GUV7BRH4IFC35D6A4XJSXVNPUK4VECXGJVFOV7LSXM5FFDJM2472X"
+[1] 2024/04/09 18:26:21.329906 [INF] 172.25.255.2:44060 - rid:16 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:26:21.338149 [INF] 172.25.255.2:44074 - rid:17 - Router connection closed: Client Closed
+[1] 2024/04/09 18:26:21.526030 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:26:21.537598 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:26:21.537732 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:26:21.538569 [DBG] 172.25.255.4:6222 - rid:18 - Route connect msg sent
+[1] 2024/04/09 18:26:21.539101 [DBG] 172.25.255.4:6222 - rid:19 - Route connect msg sent
+[1] 2024/04/09 18:26:21.539832 [INF] 172.25.255.4:6222 - rid:19 - Route connection created
+[1] 2024/04/09 18:26:21.539880 [DBG] 172.25.255.4:6222 - rid:18 - Detected duplicate remote route "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI"
+[1] 2024/04/09 18:26:21.540930 [INF] 172.25.255.4:6222 - rid:18 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:26:21.539390 [INF] 172.25.255.4:6222 - rid:18 - Route connection created
+[1] 2024/04/09 18:26:21.540115 [DBG] 172.25.255.4:6222 - rid:19 - Route pool size reached, closing extra connection to "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI"
+[1] 2024/04/09 18:26:21.542611 [DBG] 172.25.255.4:6222 - rid:19 - Detected duplicate remote route "NBIKS5ZMSJMMKT2LCVBNRZSKUH3TBLAQJ64AXDOHVRMCAUW635NIU6MI"
+[1] 2024/04/09 18:26:21.543128 [INF] 172.25.255.4:6222 - rid:19 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:26:21.577566 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:26:21.696216 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:26:21.701973 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:26:21.706378 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:26:21.721286 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:26:21.848041 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:26:21.863794 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:26:21.918030 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:26:22.525987 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:26:23.526008 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:26:24.525111 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:26:25.105279 [DBG] RAFT [5rpweUtA - _meta_] Switching to candidate
+[1] 2024/04/09 18:26:25.127364 [DBG] RAFT [5rpweUtA - _meta_] Sending out voteRequest {term:10 lastTerm:9 lastIndex:23 candidate:5rpweUtA reply:}
+[1] 2024/04/09 18:26:25.147249 [DBG] RAFT [5rpweUtA - _meta_] Received a voteResponse &{term:10 peer:HFT3WXRv granted:true}
+[1] 2024/04/09 18:26:25.148054 [DBG] RAFT [5rpweUtA - _meta_] Switching to leader
+[1] 2024/04/09 18:26:25.149415 [INF] Self is new JetStream cluster metadata leader
+[1] 2024/04/09 18:26:25.149654 [DBG] RAFT [5rpweUtA - _meta_] Received a voteResponse &{term:10 peer:sv1FOKru granted:true}
+[1] 2024/04/09 18:26:25.150160 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:26:25.525659 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:26:51.578149 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:26:51.696701 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:26:51.703154 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:26:51.707424 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:26:51.722194 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:26:51.848786 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:26:51.865008 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:26:51.918975 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:27:20.524226 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:27:21.578907 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:27:21.696680 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:27:21.704083 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:27:21.708365 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:27:21.722715 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:27:21.849534 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:27:21.865987 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:27:21.920275 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:27:51.580872 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:27:51.697805 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:27:51.705299 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:27:51.709969 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:27:51.724529 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:27:51.850888 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:27:51.867304 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:27:51.921458 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:28:21.581220 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:28:21.698588 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:28:21.706596 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:28:21.710247 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:28:21.725528 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:28:21.851136 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:28:21.868010 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:28:21.922632 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:28:51.582148 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:28:51.699329 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:28:51.707780 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:28:51.711005 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:28:51.726782 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:28:51.852551 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:28:51.869016 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:28:51.923892 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:29:21.582421 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:29:21.700981 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:29:21.709284 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:29:21.712306 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:29:21.728097 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:29:21.853448 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:29:21.869992 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:29:21.925302 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:29:51.582357 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:29:51.701192 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:29:51.709187 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:29:51.713507 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:29:51.728565 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:29:51.853895 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:29:51.870325 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:29:51.925657 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:30:21.583207 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:30:21.700927 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:30:21.709106 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:30:21.713267 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:30:21.729408 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:30:21.853867 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:30:21.870404 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:30:21.926782 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:30:51.584242 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:30:51.701595 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:30:51.711333 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:30:51.714563 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:30:51.729923 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:30:51.854667 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:30:51.871620 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:30:51.928045 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:31:21.584746 [DBG] 172.25.255.2:6222 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:31:21.701919 [DBG] 172.25.255.2:6222 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:31:21.712393 [DBG] 172.25.255.4:57528 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:31:21.715955 [DBG] 172.25.255.2:6222 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:31:21.731173 [DBG] 172.25.255.2:6222 - rid:10 - Router Ping Timer
+[1] 2024/04/09 18:31:21.855327 [DBG] 172.25.255.4:57548 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:31:21.872464 [DBG] 172.25.255.4:57538 - rid:11 - Router Ping Timer
+[1] 2024/04/09 18:31:21.929035 [DBG] 172.25.255.4:57546 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:31:27.683251 [INF] 172.25.255.4:57548 - rid:15 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.684054 [DBG] Attempting reconnect for solicited route "nats://nats-2:6222"
+[1] 2024/04/09 18:31:27.684843 [INF] 172.25.255.2:6222 - rid:8 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.685385 [DBG] 172.25.255.2:6222 - rid:8 - Removing 50 subscriptions for account "$SYS"
+[1] 2024/04/09 18:31:27.686121 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:31:27.685564 [INF] 172.25.255.2:6222 - rid:10 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.687398 [DBG] 172.25.255.2:6222 - rid:10 - Removing 1 subscriptions for account "$G"
+[1] 2024/04/09 18:31:27.687958 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:31:27.687978 [INF] 172.25.255.4:57528 - rid:12 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.688798 [DBG] 172.25.255.4:57528 - rid:12 - Removing 50 subscriptions for account "$SYS"
+[1] 2024/04/09 18:31:27.689336 [DBG] Attempting reconnect for solicited route "nats-route://172.25.255.4:6222/"
+[1] 2024/04/09 18:31:27.688404 [INF] 172.25.255.4:57538 - rid:11 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.690270 [INF] 172.25.255.2:6222 - rid:7 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.690284 [DBG] Attempting reconnect for solicited route "nats://nats-2:6222"
+[1] 2024/04/09 18:31:27.691302 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:31:27.689517 [INF] 172.25.255.2:6222 - rid:9 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.688833 [INF] 172.25.255.4:57546 - rid:14 - Router connection closed: Client Closed
+[1] 2024/04/09 18:31:27.692595 [DBG] Attempting reconnect for solicited route "nats://nats-1:6222"
+[1] 2024/04/09 18:31:27.693330 [DBG] Attempting reconnect for solicited route "nats://nats-2:6222"
+[1] 2024/04/09 18:31:27.695248 [DBG] Trapped "terminated" signal
+[1] 2024/04/09 18:31:27.695621 [DBG] Stepping down all leader raft nodes
+[1] 2024/04/09 18:31:27.695989 [DBG] RAFT [5rpweUtA - _meta_] Being asked to stepdown
+[1] 2024/04/09 18:31:27.715252 [ERR] RAFT [5rpweUtA - _meta_] Resource not found: open /var/lib/nats/storage/jetstream/$SYS/_js_/_meta_/tav.idx: no such file or directory
+[1] 2024/04/09 18:31:27.715868 [WRN] RAFT [5rpweUtA - _meta_] Error writing term and vote file for "_meta_": open /var/lib/nats/storage/jetstream/$SYS/_js_/_meta_/tav.idx: no such file or directory
+[1] 2024/04/09 18:31:27.716255 [DBG] RAFT [5rpweUtA - _meta_] Stepping down
+[1] 2024/04/09 18:31:27.716867 [DBG] RAFT [5rpweUtA - _meta_] Switching to follower
+[1] 2024/04/09 18:31:27.716879 [INF] Initiating Shutdown...
+[1] 2024/04/09 18:31:27.717561 [INF] Initiating JetStream Shutdown...
+[1] 2024/04/09 18:31:27.718102 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[1] 2024/04/09 18:31:27.718451 [INF] JetStream Shutdown
+[1] 2024/04/09 18:31:27.717613 [INF] JetStream cluster no metadata leader
+[1] 2024/04/09 18:31:27.718813 [DBG] Shutting down all raft nodes
+[1] 2024/04/09 18:31:27.719522 [DBG] SYSTEM - System connection closed: Internal Client
+[1] 2024/04/09 18:31:27.719990 [DBG] RAFT [5rpweUtA - _meta_] Shutdown
+[1] 2024/04/09 18:31:27.720472 [DBG] Route accept loop exiting..
+[1] 2024/04/09 18:31:27.720041 [DBG] Exiting metadata monitor
+[1] 2024/04/09 18:31:27.720606 [DBG] Client accept loop exiting..
+[1] 2024/04/09 18:31:27.720656 [DBG] SYSTEM - System connection closed: Client Closed
+[1] 2024/04/09 18:31:27.722111 [INF] Server Exiting..
+[1] 2024/04/09 18:32:43.929323 [INF] Starting nats-server
+[1] 2024/04/09 18:32:43.930634 [INF]   Version:  2.10.12
+[1] 2024/04/09 18:32:43.931063 [INF]   Git:      [121169ea]
+[1] 2024/04/09 18:32:43.932081 [DBG]   Go build: go1.21.8
+[1] 2024/04/09 18:32:43.932374 [INF]   Cluster:  nat_cluster
+[1] 2024/04/09 18:32:43.932831 [INF]   Name:     myserver3
+[1] 2024/04/09 18:32:43.933312 [INF]   Node:     5rpweUtA
+[1] 2024/04/09 18:32:43.933597 [INF]   ID:       NCTSNZIQIRGQ6F5TGS3MQ2A4LNWVBTDUZ3TVTVVPCPXO3CND4VDP2VMH
+[1] 2024/04/09 18:32:43.933994 [INF] Using configuration file: /etc/nats/nats.conf
+[1] 2024/04/09 18:32:43.935605 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2024/04/09 18:32:43.936692 [INF] Starting JetStream
+[1] 2024/04/09 18:32:43.974070 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2024/04/09 18:32:43.974430 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2024/04/09 18:32:43.974706 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2024/04/09 18:32:43.975040 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2024/04/09 18:32:43.975297 [INF] 
+[1] 2024/04/09 18:32:43.975572 [INF]          https://docs.nats.io/jetstream
+[1] 2024/04/09 18:32:43.975841 [INF] 
+[1] 2024/04/09 18:32:43.976267 [INF] ---------------- JETSTREAM ----------------
+[1] 2024/04/09 18:32:43.976610 [INF]   Max Memory:      30.00 GB
+[1] 2024/04/09 18:32:43.977334 [INF]   Max Storage:     60.00 GB
+[1] 2024/04/09 18:32:43.977628 [INF]   Store Directory: "/var/lib/nats/storage/jetstream"
+[1] 2024/04/09 18:32:43.977928 [INF] -------------------------------------------
+[1] 2024/04/09 18:32:43.978387 [DBG]   Exports:
+[1] 2024/04/09 18:32:43.978748 [DBG]      $JS.API.>
+[1] 2024/04/09 18:32:43.979961 [DBG] Enabled JetStream for account "$G"
+[1] 2024/04/09 18:32:43.980347 [DBG]   Max Memory:      -1 B
+[1] 2024/04/09 18:32:43.980696 [DBG]   Max Storage:     -1 B
+[1] 2024/04/09 18:32:44.119366 [DBG] JetStream state for account "$G" recovered
+[1] 2024/04/09 18:32:44.119709 [INF] Starting JetStream cluster
+[1] 2024/04/09 18:32:44.120014 [DBG] JetStream cluster checking for stable cluster name and peers
+[1] 2024/04/09 18:32:44.120347 [INF] Creating JetStream metadata controller
+[1] 2024/04/09 18:32:44.752675 [INF] JetStream cluster bootstrapping
+[1] 2024/04/09 18:32:44.752957 [DBG] JetStream cluster initial peers: [5rpweUtA]
+[1] 2024/04/09 18:32:44.753238 [DBG] Determining expected peer size for JetStream meta group
+[1] 2024/04/09 18:32:44.753647 [DBG] Adjusting expected peer set size to 3 with 1 known
+[1] 2024/04/09 18:32:44.804363 [DBG] RAFT [5rpweUtA - _meta_] Started
+[1] 2024/04/09 18:32:44.804828 [DBG] RAFT [5rpweUtA - _meta_] Starting campaign
+[1] 2024/04/09 18:32:44.805259 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2024/04/09 18:32:44.805537 [DBG] Get non local IPs for "0.0.0.0"
+[1] 2024/04/09 18:32:44.805376 [DBG] Starting metadata monitor
+[1] 2024/04/09 18:32:44.805987 [DBG]   ip=172.25.255.3
+[1] 2024/04/09 18:32:44.806730 [INF] Server is ready
+[1] 2024/04/09 18:32:44.806839 [INF] Cluster name is nat_cluster
+[1] 2024/04/09 18:32:44.807475 [INF] Listening for route connections on 0.0.0.0:6222
+[1] 2024/04/09 18:32:44.807655 [DBG] maxprocs: Leaving GOMAXPROCS=56: CPU quota undefined
+[1] 2024/04/09 18:32:44.809660 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:44.809965 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:32:44.810410 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:32:44.810041 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:44.810275 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.2:6222: connect: connection refused
+[1] 2024/04/09 18:32:44.810587 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:32:44.811213 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.4:6222: connect: connection refused
+[1] 2024/04/09 18:32:44.811598 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.25.255.2:6222: connect: connection refused
+[1] 2024/04/09 18:32:44.904931 [WRN] Waiting for routing to be established...
+[1] 2024/04/09 18:32:45.135220 [INF] 172.25.255.4:56640 - rid:7 - Route connection created
+[1] 2024/04/09 18:32:45.135667 [INF] 172.25.255.2:57406 - rid:10 - Route connection created
+[1] 2024/04/09 18:32:45.135437 [INF] 172.25.255.4:56648 - rid:8 - Route connection created
+[1] 2024/04/09 18:32:45.135572 [INF] 172.25.255.2:57392 - rid:9 - Route connection created
+[1] 2024/04/09 18:32:45.136627 [DBG] 172.25.255.4:56640 - rid:7 - Sent local subscriptions to route
+[1] 2024/04/09 18:32:45.137234 [DBG] 172.25.255.4:56640 - rid:7 - Registering remote route "ND5VQN7ZBYMWOXSTJZDXVKO3SIFY5WBT2UOYQOMBNE24PASK54GZEN4C" for account "$SYS"
+[1] 2024/04/09 18:32:45.137792 [DBG] 172.25.255.4:56648 - rid:8 - Registering remote route "ND5VQN7ZBYMWOXSTJZDXVKO3SIFY5WBT2UOYQOMBNE24PASK54GZEN4C"
+[1] 2024/04/09 18:32:45.138309 [DBG] Trying to connect to route on 172.25.255.2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.139205 [DBG] 172.25.255.2:6222 - rid:11 - Route connect msg sent
+[1] 2024/04/09 18:32:45.139674 [INF] 172.25.255.2:6222 - rid:11 - Route connection created
+[1] 2024/04/09 18:32:45.139415 [INF] 172.25.255.4:56662 - rid:12 - Route connection created
+[1] 2024/04/09 18:32:45.139488 [DBG] 172.25.255.2:57392 - rid:9 - Sent local subscriptions to route
+[1] 2024/04/09 18:32:45.141163 [DBG] 172.25.255.2:57392 - rid:9 - Registering remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R" for account "$SYS"
+[1] 2024/04/09 18:32:45.141406 [DBG] 172.25.255.2:6222 - rid:11 - Registering remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.141479 [DBG] 172.25.255.4:56662 - rid:12 - Registering remote route "ND5VQN7ZBYMWOXSTJZDXVKO3SIFY5WBT2UOYQOMBNE24PASK54GZEN4C"
+[1] 2024/04/09 18:32:45.141567 [DBG] 172.25.255.2:57406 - rid:10 - Detected duplicate remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.143547 [INF] 172.25.255.2:57406 - rid:10 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:32:45.146692 [INF] 172.25.255.2:6222 - rid:11 - Router connection closed: Client Closed
+[1] 2024/04/09 18:32:45.147094 [DBG] Attempting reconnect for solicited route "nats-route://172.25.255.2:6222/"
+[1] 2024/04/09 18:32:45.163217 [DBG] Trying to connect to route on 172.25.255.2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.163985 [DBG] 172.25.255.2:6222 - rid:13 - Route connect msg sent
+[1] 2024/04/09 18:32:45.164536 [INF] 172.25.255.2:6222 - rid:13 - Route connection created
+[1] 2024/04/09 18:32:45.164736 [DBG] 172.25.255.2:6222 - rid:13 - Registering remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.207520 [DBG] Recovered JetStream cluster metadata
+[1] 2024/04/09 18:32:45.207952 [DBG] JetStream cluster checking for orphans
+[1] 2024/04/09 18:32:45.208342 [WRN] JetStream has not established contact with a meta leader
+[1] 2024/04/09 18:32:45.210934 [INF] 172.25.255.4:56674 - rid:14 - Route connection created
+[1] 2024/04/09 18:32:45.210956 [DBG] Trying to connect to route on 172.25.255.2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.211758 [DBG] 172.25.255.4:56674 - rid:14 - Registering remote route "ND5VQN7ZBYMWOXSTJZDXVKO3SIFY5WBT2UOYQOMBNE24PASK54GZEN4C"
+[1] 2024/04/09 18:32:45.211968 [DBG] 172.25.255.2:6222 - rid:15 - Route connect msg sent
+[1] 2024/04/09 18:32:45.212490 [INF] 172.25.255.2:6222 - rid:15 - Route connection created
+[1] 2024/04/09 18:32:45.212762 [DBG] 172.25.255.2:6222 - rid:15 - Registering remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.219502 [DBG] Trying to connect to route on 172.25.255.2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.220103 [DBG] 172.25.255.2:6222 - rid:16 - Route connect msg sent
+[1] 2024/04/09 18:32:45.220439 [INF] 172.25.255.2:6222 - rid:16 - Route connection created
+[1] 2024/04/09 18:32:45.220543 [DBG] 172.25.255.2:6222 - rid:16 - Registering remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.226560 [INF] 172.25.255.2:57410 - rid:17 - Route connection created
+[1] 2024/04/09 18:32:45.228146 [INF] 172.25.255.2:57410 - rid:17 - Router connection closed: Client Closed
+[1] 2024/04/09 18:32:45.229840 [DBG] Trying to connect to route on 172.25.255.2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.230553 [DBG] 172.25.255.2:6222 - rid:18 - Route connect msg sent
+[1] 2024/04/09 18:32:45.230963 [INF] 172.25.255.2:6222 - rid:18 - Route connection created
+[1] 2024/04/09 18:32:45.231062 [DBG] 172.25.255.2:6222 - rid:18 - Route pool size reached, closing extra connection to "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.231559 [DBG] 172.25.255.2:6222 - rid:18 - Detected duplicate remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.231864 [INF] 172.25.255.2:6222 - rid:18 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:32:45.258008 [DBG] RAFT [5rpweUtA - _meta_] Switching to candidate
+[1] 2024/04/09 18:32:45.261409 [DBG] Trying to connect to route on 172.25.255.2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.261878 [DBG] 172.25.255.2:6222 - rid:19 - Route connect msg sent
+[1] 2024/04/09 18:32:45.262214 [INF] 172.25.255.2:6222 - rid:19 - Route connection created
+[1] 2024/04/09 18:32:45.262335 [DBG] 172.25.255.2:6222 - rid:19 - Route pool size reached, closing extra connection to "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.262712 [DBG] 172.25.255.2:6222 - rid:19 - Detected duplicate remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.262958 [INF] 172.25.255.2:6222 - rid:19 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:32:45.270927 [DBG] RAFT [5rpweUtA - _meta_] Sending out voteRequest {term:1 lastTerm:0 lastIndex:0 candidate:5rpweUtA reply:}
+[1] 2024/04/09 18:32:45.287829 [DBG] RAFT [5rpweUtA - _meta_] Received a voteResponse &{term:1 peer:sv1FOKru granted:true}
+[1] 2024/04/09 18:32:45.288192 [DBG] RAFT [5rpweUtA - _meta_] Switching to leader
+[1] 2024/04/09 18:32:45.288464 [DBG] RAFT [5rpweUtA - _meta_] Received a voteResponse &{term:1 peer:HFT3WXRv granted:true}
+[1] 2024/04/09 18:32:45.289935 [INF] Self is new JetStream cluster metadata leader
+[1] 2024/04/09 18:32:45.290428 [DBG] Checking JetStream cluster size
+[1] 2024/04/09 18:32:45.291627 [DBG] RAFT [5rpweUtA - _meta_] Added peer "HFT3WXRv"
+[1] 2024/04/09 18:32:45.291940 [DBG] RAFT [5rpweUtA - _meta_] Decreasing our clustersize: 3 -> 2
+[1] 2024/04/09 18:32:45.301282 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:32:45.330086 [DBG] RAFT [5rpweUtA - _meta_] Added peer "HFT3WXRv"
+[1] 2024/04/09 18:32:45.330503 [DBG] RAFT [5rpweUtA - _meta_] Added peer "sv1FOKru"
+[1] 2024/04/09 18:32:45.330861 [DBG] RAFT [5rpweUtA - _meta_] Expanding our clustersize: 2 -> 3
+[1] 2024/04/09 18:32:45.340111 [DBG] RAFT [5rpweUtA - _meta_] Added peer "sv1FOKru"
+[1] 2024/04/09 18:32:45.348960 [DBG] RAFT [5rpweUtA - _meta_] Added peer "sv1FOKru"
+[1] 2024/04/09 18:32:45.349623 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:32:45.368161 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:32:45.380303 [DBG] RAFT [5rpweUtA - _meta_] Added peer "sv1FOKru"
+[1] 2024/04/09 18:32:45.385922 [DBG] RAFT [5rpweUtA - _meta_] Installing snapshot of 0 bytes
+[1] 2024/04/09 18:32:45.807000 [DBG] Checking JetStream cluster state
+[1] 2024/04/09 18:32:45.813351 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:32:45.813380 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.813542 [DBG] Trying to connect to route on nats-1:6222 (172.25.255.4:6222)
+[1] 2024/04/09 18:32:45.813890 [DBG] Trying to connect to route on nats-2:6222 (172.25.255.2:6222)
+[1] 2024/04/09 18:32:45.815865 [DBG] 172.25.255.4:6222 - rid:22 - Route connect msg sent
+[1] 2024/04/09 18:32:45.814424 [DBG] 172.25.255.4:6222 - rid:20 - Route connect msg sent
+[1] 2024/04/09 18:32:45.815362 [DBG] 172.25.255.2:6222 - rid:21 - Route connect msg sent
+[1] 2024/04/09 18:32:45.816283 [INF] 172.25.255.4:6222 - rid:22 - Route connection created
+[1] 2024/04/09 18:32:45.816293 [DBG] 172.25.255.2:6222 - rid:23 - Route connect msg sent
+[1] 2024/04/09 18:32:45.817966 [INF] 172.25.255.2:6222 - rid:23 - Route connection created
+[1] 2024/04/09 18:32:45.816386 [DBG] 172.25.255.4:6222 - rid:22 - Detected duplicate remote route "ND5VQN7ZBYMWOXSTJZDXVKO3SIFY5WBT2UOYQOMBNE24PASK54GZEN4C"
+[1] 2024/04/09 18:32:45.816942 [INF] 172.25.255.4:6222 - rid:20 - Route connection created
+[1] 2024/04/09 18:32:45.817122 [INF] 172.25.255.2:6222 - rid:21 - Route connection created
+[1] 2024/04/09 18:32:45.817240 [DBG] 172.25.255.4:6222 - rid:20 - Route pool size reached, closing extra connection to "ND5VQN7ZBYMWOXSTJZDXVKO3SIFY5WBT2UOYQOMBNE24PASK54GZEN4C"
+[1] 2024/04/09 18:32:45.817440 [DBG] 172.25.255.2:6222 - rid:21 - Detected duplicate remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.818395 [DBG] 172.25.255.2:6222 - rid:23 - Route pool size reached, closing extra connection to "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.818947 [INF] 172.25.255.4:6222 - rid:22 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:32:45.820961 [DBG] 172.25.255.4:6222 - rid:20 - Detected duplicate remote route "ND5VQN7ZBYMWOXSTJZDXVKO3SIFY5WBT2UOYQOMBNE24PASK54GZEN4C"
+[1] 2024/04/09 18:32:45.821521 [INF] 172.25.255.2:6222 - rid:21 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:32:45.822201 [DBG] 172.25.255.2:6222 - rid:23 - Detected duplicate remote route "NAAQJF5WDDR3X5RMN36U5FULEEAVJQ4JOLGGKTZJIZ7EX6EB3F4VVC5R"
+[1] 2024/04/09 18:32:45.823406 [INF] 172.25.255.4:6222 - rid:20 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:32:45.824482 [INF] 172.25.255.2:6222 - rid:23 - Router connection closed: Duplicate Route
+[1] 2024/04/09 18:32:46.195789 [DBG] 172.25.255.4:56662 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:32:46.203050 [DBG] 172.25.255.4:56640 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:32:46.224084 [DBG] 172.25.255.4:56674 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:32:46.240645 [INF] 172.25.255.2:57422 - rid:24 - Route connection created
+[1] 2024/04/09 18:32:46.244213 [INF] 172.25.255.2:57422 - rid:24 - Router connection closed: Client Closed
+[1] 2024/04/09 18:32:46.277229 [DBG] 172.25.255.2:6222 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:32:46.282842 [DBG] 172.25.255.4:56648 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:32:46.313605 [DBG] 172.25.255.2:57392 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:32:46.320497 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:32:46.360285 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:33:16.195767 [DBG] 172.25.255.4:56662 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:33:16.203292 [DBG] 172.25.255.4:56640 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:33:16.224503 [DBG] 172.25.255.4:56674 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:33:16.277954 [DBG] 172.25.255.2:6222 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:33:16.283551 [DBG] 172.25.255.4:56648 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:33:16.314095 [DBG] 172.25.255.2:57392 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:33:16.320796 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:33:16.361578 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:33:46.195875 [DBG] 172.25.255.4:56662 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:33:46.203356 [DBG] 172.25.255.4:56640 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:33:46.225011 [DBG] 172.25.255.4:56674 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:33:46.278895 [DBG] 172.25.255.2:6222 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:33:46.284071 [DBG] 172.25.255.4:56648 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:33:46.314686 [DBG] 172.25.255.2:57392 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:33:46.321840 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:33:46.362756 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:34:16.196752 [DBG] 172.25.255.4:56662 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:34:16.204341 [DBG] 172.25.255.4:56640 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:34:16.225255 [DBG] 172.25.255.4:56674 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:34:16.279722 [DBG] 172.25.255.2:6222 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:34:16.284691 [DBG] 172.25.255.4:56648 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:34:16.315655 [DBG] 172.25.255.2:57392 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:34:16.323103 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:34:16.363561 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:34:46.197533 [DBG] 172.25.255.4:56662 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:34:46.204185 [DBG] 172.25.255.4:56640 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:34:46.225460 [DBG] 172.25.255.4:56674 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:34:46.279579 [DBG] 172.25.255.2:6222 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:34:46.285216 [DBG] 172.25.255.4:56648 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:34:46.315298 [DBG] 172.25.255.2:57392 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:34:46.322680 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:34:46.363723 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:35:16.198820 [DBG] 172.25.255.4:56662 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:35:16.205760 [DBG] 172.25.255.4:56640 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:35:16.226193 [DBG] 172.25.255.4:56674 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:35:16.280797 [DBG] 172.25.255.2:6222 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:35:16.285555 [DBG] 172.25.255.4:56648 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:35:16.315807 [DBG] 172.25.255.2:57392 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:35:16.323833 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:35:16.364700 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer
+[1] 2024/04/09 18:35:46.200492 [DBG] 172.25.255.4:56662 - rid:12 - Router Ping Timer
+[1] 2024/04/09 18:35:46.206720 [DBG] 172.25.255.4:56640 - rid:7 - Router Ping Timer
+[1] 2024/04/09 18:35:46.226614 [DBG] 172.25.255.4:56674 - rid:14 - Router Ping Timer
+[1] 2024/04/09 18:35:46.280968 [DBG] 172.25.255.2:6222 - rid:15 - Router Ping Timer
+[1] 2024/04/09 18:35:46.285385 [DBG] 172.25.255.4:56648 - rid:8 - Router Ping Timer
+[1] 2024/04/09 18:35:46.315999 [DBG] 172.25.255.2:57392 - rid:9 - Router Ping Timer
+[1] 2024/04/09 18:35:46.324438 [DBG] 172.25.255.2:6222 - rid:16 - Router Ping Timer
+[1] 2024/04/09 18:35:46.365010 [DBG] 172.25.255.2:6222 - rid:13 - Router Ping Timer

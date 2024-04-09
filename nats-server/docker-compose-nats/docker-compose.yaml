@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  nats-1:
+    image: nats:alpine
+    container_name: nats-1
+    environment:
+      TZ: "Asia/Seoul"
+    volumes:
+      - ./nats-1.conf:/etc/nats/nats.conf
+      - ./logs/server-1:/var/log
+      - ./storage/server-1:/var/lib/nats/storage
+    ports:
+      - "14222:4222"
+      - "18222:8222"
+    networks:
+      - nats-network
+    command: ["--config", "/etc/nats/nats.conf"] # 사용자 정의 구성 파일을 사용
+  nats-2:
+    image: nats:alpine
+    container_name: nats-2
+    environment:
+      TZ: "Asia/Seoul"
+    volumes:
+      - ./nats-2.conf:/etc/nats/nats.conf
+      - ./logs/server-2:/var/log
+      - ./storage/server-2:/var/lib/nats/storage
+    networks:
+      - nats-network
+    ports:
+      - "24222:4222"
+      - "28222:8222"
+    command: ["--config", "/etc/nats/nats.conf"] # 사용자 정의 구성 파일을 사용
+  nats-3:
+    image: nats:alpine
+    container_name: nats-3
+    environment:
+      TZ: "Asia/Seoul"
+    volumes:
+      - ./nats-3.conf:/etc/nats/nats.conf
+      - ./logs/server-3:/var/log
+      - ./storage/server-3:/var/lib/nats/storage
+    ports:
+      - "34222:4222"
+      - "38222:8222"
+    networks:
+      - nats-network
+    command: ["--config", "/etc/nats/nats.conf"] # 사용자 정의 구성 파일을 사용
+networks:
+  nats-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.255.0/24
+      driver: default
