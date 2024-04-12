@@ -88,3 +88,13 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+## Test
+
+nats sub -s "nats://127.0.0.1:14222" hello &
+
+nats pub -s "nats://127.0.0.1:14222" hello world_14222
+nats pub -s "nats://127.0.0.1:24222" hello world_24222
+nats pub -s "nats://127.0.0.1:34222" hello world_34222
+
+nats pub -s "nats://127.0.0.1:14222,nats://127.0.0.1:24222,nats://127.0.0.1:34222" whole_world
