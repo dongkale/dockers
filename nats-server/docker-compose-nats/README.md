@@ -89,6 +89,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
+## Document
+
+https://docs.nats.io/running-a-nats-service/configuration/clustering/jetstream_clustering
+
 ## Test
 
 nats sub -s "nats://127.0.0.1:14222" hello &
