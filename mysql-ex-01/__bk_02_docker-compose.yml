@@ -1,0 +1,35 @@
+version: "3"
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-docker
+    platform: linux/x86_64
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      # MYSQL_AUTHENTICATION_PLUGIN: mysql_native_password
+      TZ: Asia/Seoul
+    ports:
+      - 13306:3306
+    volumes:
+      # - ./data:/var/lib/mysql
+      # - ./config/conf.d:/etc/mysql/conf.d
+      # - ./config/my.cnf:/etc/my.cnf
+      # - ./mysql-init-files/:/docker-entrypoint-initdb.d
+      # - ./init:/docker-entrypoint-initdb.d
+      - mysql-data:/var/lib/mysql
+      # - ./init-files/:/docker-entrypoint-initdb.d
+      # - ./config/:/etc/mysql/conf.d/"
+      # - ./data:/var/lib/mysql
+      # - mysql_data:/bitnami/mysql/data
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    # - --default-authentication-plugin=mysql_native_password
+    #   - --skip-ssl
+    #   - --ssl-mode=DISABLED
+    #   - --ssl=0
+    #   - --sha256-password-auto-generate-rsa-keys=OFF
+    #   - --caching-sha2-password-auto-generate-rsa-keys=OFF
+volumes:
+  mysql-data:
