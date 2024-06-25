@@ -28,26 +28,10 @@ RUN sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 RUN composer global require laravel/installer
 RUN sudo apt-get update
 RUN sudo apt-get install -y nodejs
-# RUN sudo apt-get update
+RUN sudo apt-get update
 # RUN sudo apt-get install -y npm
 
-# Install Node.js
-ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 20.11.0
-
-WORKDIR $NVM_DIR
-RUN apt-get install -y build-essential
-RUN curl -o- -k https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-RUN . $NVM_DIR/nvm.sh \
-    nvm install $NODE_VERSION \
-    nvm alias default $NODE_VERSION \
-    nvm use default
-
-ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
-ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
-
 RUN rm -rf /var/lib/apt/lists/*
-
 
 # Set the working directory
 WORKDIR /app
