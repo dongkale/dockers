@@ -1,0 +1,81 @@
+FROM ubuntu:22.04
+
+LABEL version="1.0"
+LABEL description="LOMAD2 Server"
+LABEL maintainer="sehwan@liche.co.kr"
+
+# Set Timezone
+ENV TZ=Asia/Seoul
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Set Locale
+RUN apt-get update -y && apt-get upgrade -y
+RUN apt-get install -y locales
+
+RUN localedef -i ko_KR -f UTF-8 ko_KR.UTF-8
+ENV LANGUAGE ko_KR.UTF-8
+ENV LANG ko_KR.UTF-8
+ENV LC_ALL ko_KR.UTF-8
+ENV LC_CTYPE ko_KR.UTF-8
+ENV LC_MESSAGES ko_KR.UTF-8
+
+# Install Apache & PHP 7.4
+RUN apt-get install -y software-properties-common unzip
+RUN apt-get update && apt-get install -y
+RUN apt-get update
+RUN apt-get install -y vim
+RUN apt-get install -y sudo 
+RUN sudo apt-get install -y vim
+RUN sudo apt-get install -y tzdata
+RUN sudo dpkg-reconfigure tzdata
+RUN sudo apt-get update
+RUN sudo apt-get -y upgrade
+RUN sudo apt-get install -y php8.1-cli php8.1-sqlite3 php8.1-curl php8.1-mysql php8.1-readline php8.1-mbstring php8.1-xml php8.1-zip php8.1-intl
+
+RUN sudo apt-get update
+RUN sudo apt-get install -y php8.1-fpm
+RUN sudo apt-get install -y nginx
+RUN sudo apt-get install -y unzip
+
+# Install Node.js
+ENV NVM_DIR /usr/local/nvm
+ENV NODE_VERSION 16.19.0
+
+WORKDIR $NVM_DIR
+RUN sudo apt-get update
+RUN apt-get install -y build-essential curl
+RUN curl -o- -k https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+RUN . $NVM_DIR/nvm.sh \
+    nvm install $NODE_VERSION \
+    nvm alias default $NODE_VERSION \
+    nvm use default
+
+ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
+ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
+
+# Register the COMPOSER_HOME environment variable
+ENV COMPOSER_HOME /composer
+
+# Add global binary directory to PATH and make sure to re-export it
+ENV PATH /composer/vendor/bin:$PATH
+
+# Allow Composer to be run as root
+ENV COMPOSER_ALLOW_SUPERUSER 1
+
+# Setup the Composer installer
+RUN curl -o -k /tmp/composer-setup.php https://getcomposer.org/installer && \
+    curl -o -k /tmp/composer-setup.sig https://composer.github.io/installer.sig && \
+    php -r "if (hash('SHA384', file_get_contents('/tmp/composer-setup.php')) !== trim(file_get_contents('/tmp/composer-setup.sig'))) { unlink('/tmp/composer-setup.php'); echo 'Invalid installer' . PHP_EOL; exit(1); }" && \
+    php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer \
+    php -r "unlink('/tmp/composer-setup.php');"
+
+WORKDIR /var/www/html/server
+# COPY composer.* package*.json ./
+# RUN composer install --no-scripts --no-autoloader
+# RUN npm install
+# COPY . .
+
+VOLUME ["/var/www/html/server"]
+EXPOSE 80 9003
+
+ENTRYPOINT ["base"]
