@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  oracle-db:
+    image: gvenzl/oracle-xe
+    container_name: oracle-db
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=password
+    volumes:
+      - oracle-db-data:/opt/oracle/oradata
+    restart: always
+volumes:
+  oracle-db-data:
+    driver: local
