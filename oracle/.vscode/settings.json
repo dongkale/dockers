@@ -1,0 +1,45 @@
+{
+  "oracledevtools.defaultConnection": "JOBQRATE.xe",
+  "oracledevtools.connections": [
+    {
+      "authenticationType": 1,
+      "dBAPrivilege": "SYSDBA",
+      "userID": "SYS",
+      "passwordSaved": true,
+      "dataSource": "localhost:1521/xe",
+      "connectionType": 2,
+      "databaseHostName": "localhost",
+      "databasePortNumber": "1521",
+      "databaseServiceName": "xe",
+      "tnsAdmin": "C:\\Users\\dklee\\Oracle\\network\\admin",
+      "name": "SYS.xe",
+      "color": "ff4143",
+      "currentSchema": "",
+      "addSettingsScopeToConnectionName": true,
+      "addCurrentSchemaToConnectionName": false,
+      "filters": [],
+      "useCompatibleNamesDirectoryPath": true,
+      "passwordStore": "Secret Storage"
+    },
+    {
+      "authenticationType": 2,
+      "dBAPrivilege": "None",
+      "userID": "JOBQRATE",
+      "passwordSaved": true,
+      "dataSource": "localhost:1521/xe",
+      "connectionType": 2,
+      "databaseHostName": "localhost",
+      "databasePortNumber": "1521",
+      "databaseServiceName": "xe",
+      "tnsAdmin": "C:\\Users\\dklee\\Oracle\\network\\admin",
+      "name": "JOBQRATE.xe",
+      "color": "0000ff",
+      "currentSchema": "",
+      "addSettingsScopeToConnectionName": false,
+      "addCurrentSchemaToConnectionName": false,
+      "filters": [],
+      "useCompatibleNamesDirectoryPath": true,
+      "passwordStore": "Secret Storage"
+    }
+  ]
+}

@@ -1,6 +1,8 @@
-# Docker
+# Docker Oracle
 
-# https://hub.docker.com/r/gvenzl/oracle-xe
+## 참고 사이트
+
+https://hub.docker.com/r/gvenzl/oracle-xe
 
 ## Quick Start
 
@@ -28,19 +30,19 @@ Reset database SYS and SYSTEM passwords:
 docker exec <container name|id> resetPassword <your password>
 ```
 
-## work
+## Docker Run
 
 ```
 docker run -d -p 1521:1521 -e ORACLE_PASSWORD=password -v oracle-volume:/opt/oracle/oradata gvenzl/oracle-xe
 ```
 
-## volume folder
+## Volume Folder
 
 ```
 \\wsl$\docker-desktop-data\data\docker\volumes
 ```
 
-## composer 설정
+## Compose 설정
 
 ```
 version: "3.8"
@@ -59,10 +61,9 @@ services:
 volumes:
   oracle-db-data:
     driver: local
-
 ```
 
-## composer 실행
+## Compose 실행
 
 ```
 docker-compose up -d
