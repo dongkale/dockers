@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   nats-1:
     image: nats:alpine
@@ -10,6 +8,7 @@ services:
       - ./nats-1.conf:/etc/nats/nats.conf
       - ./logs/server-1:/var/log
       - ./storage/server-1:/var/lib/nats/storage
+    restart: always # 자동 재시작 설정
     ports:
       - "14222:4222"
       - "18222:8222"
@@ -25,6 +24,7 @@ services:
       - ./nats-2.conf:/etc/nats/nats.conf
       - ./logs/server-2:/var/log
       - ./storage/server-2:/var/lib/nats/storage
+    restart: always # 자동 재시작 설정
     networks:
       - nats-network
     ports:
@@ -40,6 +40,7 @@ services:
       - ./nats-3.conf:/etc/nats/nats.conf
       - ./logs/server-3:/var/log
       - ./storage/server-3:/var/lib/nats/storage
+    restart: always # 자동 재시작 설정
     ports:
       - "34222:4222"
       - "38222:8222"

@@ -102,3 +102,10 @@ nats pub -s "nats://127.0.0.1:24222" hello world_24222
 nats pub -s "nats://127.0.0.1:34222" hello world_34222
 
 nats pub -s "nats://127.0.0.1:14222,nats://127.0.0.1:24222,nats://127.0.0.1:34222" whole_world
+
+docker kill nats-2
+
+# ERROR: Pool overlaps with other one on this address space when starting my_project docker setup
+
+docker network ls
+docker network rm ID

@@ -1,0 +1,47 @@
+[1] 2024/11/14 05:35:19.617770 [INF] Starting nats-server
+[1] 2024/11/14 05:35:19.618261 [INF]   Version:  2.9.20
+[1] 2024/11/14 05:35:19.618509 [INF]   Git:      [97dd7cb]
+[1] 2024/11/14 05:35:19.618772 [INF]   Cluster:  c1
+[1] 2024/11/14 05:35:19.619038 [INF]   Name:     nats3
+[1] 2024/11/14 05:35:19.619320 [INF]   Node:     fvTBnQC7
+[1] 2024/11/14 05:35:19.619717 [INF]   ID:       NBNXERSEQ4ETO6HHTMFWPNXAMJOTYKJAN5MPY3FKNMQUJNOM2ACEPVQC
+[1] 2024/11/14 05:35:19.621118 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2024/11/14 05:35:19.621585 [INF] Starting JetStream
+[1] 2024/11/14 05:35:19.622874 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2024/11/14 05:35:19.623379 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2024/11/14 05:35:19.623695 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2024/11/14 05:35:19.624224 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2024/11/14 05:35:19.624501 [INF] 
+[1] 2024/11/14 05:35:19.624879 [INF]          https://docs.nats.io/jetstream
+[1] 2024/11/14 05:35:19.625893 [INF] 
+[1] 2024/11/14 05:35:19.626230 [INF] ---------------- JETSTREAM ----------------
+[1] 2024/11/14 05:35:19.626982 [INF]   Max Memory:      47.06 GB
+[1] 2024/11/14 05:35:19.627288 [INF]   Max Storage:     687.26 GB
+[1] 2024/11/14 05:35:19.629197 [INF]   Store Directory: "/data/jetstream"
+[1] 2024/11/14 05:35:19.631521 [INF] -------------------------------------------
+[1] 2024/11/14 05:35:19.633650 [INF] Starting JetStream cluster
+[1] 2024/11/14 05:35:19.634134 [INF] Creating JetStream metadata controller
+[1] 2024/11/14 05:35:19.634739 [INF] JetStream cluster recovering state
+[1] 2024/11/14 05:35:19.635572 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2024/11/14 05:35:19.636132 [INF] Server is ready
+[1] 2024/11/14 05:35:19.636264 [INF] Cluster name is c1
+[1] 2024/11/14 05:35:19.638696 [INF] Listening for route connections on nats3:6222
+[1] 2024/11/14 05:35:19.639384 [WRN] JetStream has not established contact with a meta leader
+[1] 2024/11/14 05:35:19.641831 [INF] 172.30.0.3:43926 - rid:7 - Route connection created
+[1] 2024/11/14 05:35:19.641917 [INF] 172.30.0.3:6222 - rid:6 - Route connection created
+[1] 2024/11/14 05:35:19.648018 [INF] 172.30.0.3:43926 - rid:7 - Router connection closed: Client Closed
+[1] 2024/11/14 05:35:19.649112 [INF] 172.30.0.3:6222 - rid:6 - Router connection closed: Duplicate Route
+[1] 2024/11/14 05:35:19.649164 [INF] 172.30.0.2:6222 - rid:8 - Route connection created
+[1] 2024/11/14 05:35:19.736409 [WRN] Waiting for routing to be established...
+[1] 2024/11/14 05:35:20.509338 [INF] 172.30.0.2:45958 - rid:9 - Route connection created
+[1] 2024/11/14 05:35:20.509824 [INF] 172.30.0.2:45958 - rid:9 - Router connection closed: Duplicate Route
+[1] 2024/11/14 05:35:20.606598 [INF] JetStream cluster new metadata leader: nats1/c1
+[1] 2024/11/14 05:35:20.699776 [INF] 172.30.0.3:6222 - rid:10 - Route connection created
+[1] 2024/11/14 05:35:20.728401 [INF] 172.30.0.3:43934 - rid:11 - Route connection created
+[1] 2024/11/14 05:35:20.729195 [INF] 172.30.0.3:43934 - rid:11 - Router connection closed: Duplicate Route
+[1] 2024/11/14 05:36:02.904978 [INF] Initiating Shutdown...
+[1] 2024/11/14 05:36:02.905468 [INF] Initiating JetStream Shutdown...
+[1] 2024/11/14 05:36:02.905883 [INF] JetStream Shutdown
+[1] 2024/11/14 05:36:02.906443 [INF] 172.30.0.2:6222 - rid:8 - Router connection closed: Server Shutdown
+[1] 2024/11/14 05:36:02.906762 [INF] 172.30.0.3:6222 - rid:10 - Router connection closed: Server Shutdown
+[1] 2024/11/14 05:36:02.907459 [INF] Server Exiting..

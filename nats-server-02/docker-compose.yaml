@@ -1,0 +1,105 @@
+services:
+  nats1:
+    image: docker.io/nats:2.9.20
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+    volumes:
+      - nats1:/data
+      - ./logs/server-1:/var/log
+      - ./storage/server-1:/var/lib/nats/storage
+    restart: unless-stopped
+    networks:
+      - nats_net
+    healthcheck:
+      test: ["CMD", "nats-server", "--health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    command:
+      - "--name=nats1"
+      - "--cluster_name=c1"
+      - "--cluster=nats://nats1:6222"
+      - "--routes=nats-route://nats1:6222,nats-route://nats2:6222,nats-route://nats3:6222"
+      - "--http_port=8222"
+      - "--js"
+      - "--sd=/data"
+      - "--log=/var/log/nats.log"
+      - "--store_dir=/var/lib/nats/storage"
+
+  nats2:
+    image: docker.io/nats:2.9.20
+    ports:
+      - "4223:4222"
+      - "8223:8222"
+    volumes:
+      - nats2:/data
+      - ./logs/server-2:/var/log
+      - ./storage/server-2:/var/lib/nats/storage
+    restart: unless-stopped
+    networks:
+      - nats_net
+    depends_on:
+      nats1:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "nats-server", "--health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    command:
+      - "--name=nats2"
+      - "--cluster_name=c1"
+      - "--cluster=nats://nats2:6222"
+      - "--routes=nats-route://nats1:6222,nats-route://nats2:6222,nats-route://nats3:6222"
+      - "--http_port=8222"
+      - "--js"
+      - "--sd=/data"
+      - "--log=/var/log/nats.log"
+      - "--store_dir=/var/lib/nats/storage"
+
+  nats3:
+    image: docker.io/nats:2.9.20
+    ports:
+      - "4224:4222"
+      - "8224:8222"
+    volumes:
+      - nats3:/data
+      - ./logs/server-3:/var/log
+      - ./storage/server-3:/var/lib/nats/storage
+    restart: unless-stopped
+    networks:
+      - nats_net
+    depends_on:
+      nats2:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "nats-server", "--health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    command:
+      - "--name=nats3"
+      - "--cluster_name=c1"
+      - "--cluster=nats://0.0.0.0:6222"
+      - "--routes=nats-route://nats1:6222,nats-route://nats2:6222,nats-route://nats3:6222"
+      - "--http_port=8222"
+      - "--js"
+      - "--sd=/data"
+      - "--log=/var/log/nats.log"
+      - "--store_dir=/var/lib/nats/storage"
+
+volumes:
+  nats1:
+    external: true
+  nats2:
+    external: true
+  nats3:
+    external: true
+
+networks:
+  nats_net: # 새 네트워크 정의
+    driver: bridge
